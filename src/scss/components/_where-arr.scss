@@ -1,0 +1,88 @@
+.where-arr {
+  position: fixed;
+  right: -10rem;
+  top: 50%;
+  z-index: 500;
+  transform: translateY(-50%);
+  transition: right 0.3s;
+  @include small-tablet {
+    bottom: 100rem;
+    top: auto;
+    transform: translateY(0);
+    right: 0;
+  }
+  &:hover {
+    right: 0;
+  }
+
+  // .where-arr__arr
+
+  &__arr {
+    width: 40rem;
+    height: 40rem;
+    border-radius: 50%;
+    background: $white;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    z-index: 2;
+  }
+
+  // .where-arr__arr-svg
+
+  &__arr-svg {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  // .where-arr__content
+
+  &__content {
+    padding: 24rem 40rem 24rem 30rem;
+    border-radius: 12rem 0 0 12rem;
+    width: 96rem;
+    height: 204rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10rem);
+    -webkit-backdrop-filter: blur(60rem);
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow:
+      -2rem 3rem 8rem 0 rgba(208, 128, 161, 0.1),
+      -10rem 12rem 15rem 0 rgba(208, 128, 161, 0.09),
+      -22rem 26rem 20rem 0 rgba(208, 128, 161, 0.05),
+      -39rem 46rem 24rem 0 rgba(208, 128, 161, 0.01),
+      -61rem 72rem 26rem 0 rgba(208, 128, 161, 0);
+    @include small-tablet {
+      width: 72rem;
+      height: 180rem;
+      padding: 10rem 12rem 10rem 24rem;
+    }
+  }
+
+  // .where-arr__btn
+
+  &__btn {
+    position: absolute;
+    transform-origin: center center;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    border-radius: 60rem;
+    padding: 8rem 24rem;
+    font-weight: 700;
+    font-size: 18rem;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #f2f3f6;
+    background: $pink-ginekologiya;
+    @include small-tablet {
+      font-size: 14rem;
+      padding: 10rem 34rem;
+    }
+  }
+}

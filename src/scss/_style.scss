@@ -1,0 +1,132 @@
+@import './mixins';
+@import './flexs';
+
+$pink-ginekologiya: #dc034c;
+$green-urologiya: #017e90;
+$white: #fff;
+$light-gray: #f4f4f4;
+$gray: #dadada;
+$dark-gray: #686868;
+$black: #000;
+$light-pink: #fe3b87;
+$dark-pink: #ae0a3d;
+$light-pink-2: #e491ac;
+$fancyboxBg:  #00000030;
+
+body {
+  color: $black;
+  background: $gray;
+  font-family: 'Circe';
+
+  .lock & {
+    overflow: hidden;
+    touch-action: none;
+  }
+
+  &.no-scroll {
+    overflow: hidden !important;
+    touch-action: none !important;
+    width: 100vw;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  position: relative;
+  // overflow: hidden;
+}
+
+* {
+  // outline:  1px solid red;
+}
+
+// main
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 124rem;
+  @include small-tablet {
+    margin-top: 84rem;
+  }
+}
+
+.desktop {
+  display: flex;
+
+  @include small-tablet {
+    display: none;
+  }
+}
+
+.mobile {
+  display: none;
+
+  @include small-tablet {
+    display: flex;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+@for $i from 1 through 6 {
+  .grid#{$i} {
+    display: grid;
+    grid-template-columns: repeat($i, 1fr);
+  }
+}
+
+.cv {
+  align-items: center;
+}
+
+.ch {
+  justify-content: center;
+}
+
+.ev {
+  align-items: flex-end;
+}
+
+.sv {
+  align-items: flex-start;
+}
+
+.sb {
+  justify-content: space-between;
+}
+
+.jfe {
+  justify-content: flex-end;
+}
+
+.dc {
+  flex-direction: column;
+}
+
+.flex-cc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.center {
+  text-align: center;
+}
+
+/* .values__swiper */
+
+@import './ui/ui';

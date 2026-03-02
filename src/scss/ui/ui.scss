@@ -1,0 +1,143 @@
+// typography
+@import './typo';
+@import './buttons';
+@import './form';
+@import './fancybox';
+
+.section-wrap {
+  border-radius: 60rem 60rem 0 0;
+  margin-bottom: -135rem;
+  padding-bottom: 135rem;
+  position: relative;
+  @include small-tablet {
+    border-radius: 24rem 24rem 0 0;
+    margin-bottom: -20rem;
+    padding-bottom: 20rem;
+  }
+}
+
+.breadcrumbs {
+  position: relative;
+  z-index: 5;
+  align-self: flex-start;
+  // .breadcrumbs__list
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+    width: 100%;
+    @include small-tablet {
+      gap: 8rem;
+    }
+  }
+
+  // .breadcrumbs__link
+
+  & li {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+    color: #898b93;
+    white-space: nowrap;
+
+    &:last-child {
+      color: $black;
+      cursor: default;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 100%;
+      flex-shrink: 1;
+      &::before {
+        display: inline-block;
+        content: '•';
+        font-weight: 400;
+        font-size: 18rem;
+      }
+      & p {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 100%;
+      }
+    }
+
+    @include small-tablet {
+      gap: 8rem;
+      font-size: 14rem;
+    }
+  }
+}
+
+.swiper-btn-box {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 20rem;
+  @include small-tablet {
+    gap: 12rem;
+  }
+}
+.swiper-button {
+  margin: 0 !important;
+  width: 60rem !important;
+  height: 60rem !important;
+  border-radius: 50%;
+  position: relative !important;
+  inset: 0 !important;
+  transition: all 0.3s;
+
+  &-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    inset: 0;
+    background: linear-gradient(180deg, #e0004b 0%, #b0073f 100%);
+    border-radius: inherit;
+  }
+
+  &::after {
+    content: '' !important;
+  }
+
+  &:hover {
+    & .swiper-button__svg-wrap {
+      background: $pink-ginekologiya;
+    }
+  }
+
+  @include small-tablet {
+    display: none;
+    width: 44rem !important;
+    height: 44rem !important;
+  }
+
+  &__svg-wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    transition: background 0.3s;
+    border-radius: inherit;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__svg {
+    width: 20rem;
+    height: 20rem;
+    @include small-tablet {
+      width: 16rem;
+      height: 16rem;
+    }
+  }
+}
+
+.author {
+  
+}

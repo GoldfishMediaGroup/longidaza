@@ -1,0 +1,157 @@
+.find {
+  background: $light-gray;
+
+  @include small-tablet {
+    background: $gray;
+  }
+  &__container {
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 40rem;
+    align-items: center;
+    padding: 80rem 0 120rem;
+    @include small-tablet {
+      padding: 60rem 0;
+      gap: 20rem;
+    }
+  }
+}
+
+.uteka-widget {
+  /* Минимально поддерживаемые размеры виджета: 320x520. */
+  width: 100%;
+  height: 700px;
+  outline: 1px solid #e0e0e0;
+  border-radius: 40rem;
+  overflow: hidden;
+  background: #fff;
+  @media (max-width: 1280px) {
+    height: 750px;
+  }
+  @media (max-width: 768px) {
+    height: 650px;
+    border-radius: 18px;
+
+    width: 343rem;
+  }
+}
+
+.uteka-widget iframe {
+  border: none;
+  width: 100%;
+  height: calc(100% - 140rem);
+  @media (max-width: 768px) {
+    height: calc(100% - 200rem);
+  }
+}
+
+.uteka-widget__container {
+  margin: 0 auto;
+  padding: 0 16rem;
+}
+
+@media (min-width: 600px) {
+  .uteka-widget__container {
+    padding: 0 20rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .uteka-widget__container {
+    padding: 0 40rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .uteka-widget__container {
+    padding: 0 44rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .uteka-widget__container {
+    padding: 0 60rem;
+  }
+}
+
+.uteka-widget-header {
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.uteka-widget-header__inner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 56rem;
+}
+
+.uteka-widget-header__title {
+  background: url('https://widget.uteka.ru/static/img/widgets/title_2@mobile.svg') no-repeat top/contain;
+  background-position: center;
+  width: 230rem;
+  height: 24rem;
+}
+
+.uteka-widget-header__logo {
+  height: 16rem;
+}
+
+.uteka-widget-header__logo img {
+  height: 100%;
+  object-fit: contain;
+}
+
+.uteka-widget-footer__inner {
+  display: flex;
+  align-items: center;
+  gap: 16rem;
+  padding: 10rem 0;
+}
+.uteka-widget-footer__img {
+  width: 56rem;
+  height: 56rem;
+  flex-shrink: 0;
+  @media (max-width: 768px) {
+    width: 44rem;
+    height: 44rem;
+  }
+}
+
+.uteka-widget-footer__text {
+  font-weight: 400;
+  font-size: 16rem;
+  line-height: 150%;
+  @media (max-width: 768px) {
+    font-size: 14rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .uteka-widget-header__inner {
+    flex-direction: row;
+  }
+
+  .uteka-widget-header__title {
+    background-image: url('https://widget.uteka.ru/static/img/widgets/title_2.svg') no-repeat top/cover;
+    width: 264rem;
+    height: 24rem;
+  }
+
+  .uteka-widget-header__logo {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    height: 32rem;
+  }
+}
+[class$='copyright'] {
+  display: none !important;
+}

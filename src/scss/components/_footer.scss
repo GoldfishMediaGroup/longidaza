@@ -1,0 +1,234 @@
+.footer {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  // .footer__main
+  overflow: hidden;
+  @include small-tablet {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  &__main {
+    background: radial-gradient(circle, #b8b8b8 0%, #686868 100%);
+  }
+
+  // .footer__inner
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 40rem;
+    padding: 57rem 0;
+    @include small-tablet {
+      padding: 40rem 0 30rem;
+      gap: 30rem;
+    }
+  }
+
+  // .footer__bibliography
+
+  &__bibliography {
+    font-weight: 400;
+    font-size: 11rem;
+    line-height: 145%;
+    width: 1056rem;
+    margin: 0;
+    padding-left: 12rem;
+    @include small-tablet {
+      width: 100%;
+      font-size: 12rem;
+    }
+  }
+
+  // .footer__content
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 198rem;
+    @include small-tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 30rem;
+    }
+  }
+
+  // .footer__info
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 60rem;
+    @include small-tablet {
+      gap: 20rem;
+    }
+  }
+
+  // .footer__logo
+
+  &__logo {
+    width: 320rem;
+    height: 49rem;
+    @include small-tablet {
+      width: 161rem;
+      height: 25rem;
+    }
+  }
+
+  // .footer__btn
+
+  &__btn {
+  }
+
+  // .footer__links
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 20rem;
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  // .footer__link
+
+  &__link {
+    text-decoration: underline;
+  }
+
+  // .footer__nav
+
+  &__nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 237rem;
+    padding-top: 5rem;
+    @include small-tablet {
+      grid-template-columns: 170rem 141rem;
+      gap: 40rem;
+    }
+  }
+
+  // .footer__nav-item
+
+  &__nav-item {
+    display: flex;
+    flex-direction: column;
+    gap: 29.2rem;
+    @include desk-only {
+      white-space: nowrap;
+    }
+    @include small-tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 26.4rem;
+    }
+  }
+
+  // .footer__nav-link
+
+  &__nav-link {
+    @include small-tablet {
+      font-size: 14rem;
+    }
+  }
+
+  // .footer__nav-item-list
+
+  &__nav-item-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16rem;
+    @include small-tablet {
+      gap: 16rem;
+    }
+  }
+
+  // .footer__nav-item-link
+
+  &__nav-item-link {
+    @include small-tablet {
+      font-size: 14rem;
+    }
+  }
+
+  // .footer__social
+
+  &__social {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    justify-content: space-between;
+    @include small-tablet {
+      gap: 24rem;
+    }
+  }
+
+  // .footer__social-info
+
+  &__social-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30rem;
+  }
+
+  // .footer__social-logo
+
+  &__social-logo {
+    width: 234rem;
+    height: 45rem;
+    @include small-tablet {
+      width: 180rem;
+      height: 35rem;
+    }
+  }
+
+  // .footer__social-adress
+
+  &__social-adress {
+    display: flex;
+    flex-direction: column;
+    gap: 30rem;
+    @include small-tablet {
+      gap: 24rem;
+      margin-right: -7rem;
+      & br {
+        display: none;
+      }
+    }
+  }
+
+  // .footer__social-list
+
+  &__social-list {
+    display: flex;
+    align-items: center;
+    gap: 16rem;
+    @include small-tablet {
+      gap: 10rem;
+    }
+  }
+
+  // .footer__social-link
+
+  // .footer__disclaimer-wrap
+
+  &__disclaimer-wrap {
+    background: $white;
+    padding: 32rem 0 22rem;
+    @include small-tablet {
+      padding: 12rem 0;
+    }
+  }
+
+  // .footer__disclaimer
+
+  &__disclaimer {
+  }
+  & a {
+    transition: color 0.3s;
+    &:hover {
+      color: $pink-ginekologiya;
+    }
+  }
+}

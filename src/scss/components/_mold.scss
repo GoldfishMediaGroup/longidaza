@@ -1,0 +1,179 @@
+.mold {
+  background: $gray;
+  overflow: hidden;
+  // .mold__container
+
+  &__container {
+  }
+
+  // .mold__inner
+
+  &__inner {
+    padding: 80rem 0 120rem;
+    display: flex;
+    flex-direction: column;
+    gap: 40rem;
+    align-items: center;
+    @include small-tablet {
+      padding: 60rem 0;
+      gap: 20rem;
+    }
+  }
+  &__title {
+    @include small-tablet {
+      margin-bottom: -8rem;
+    }
+  }
+  // .mold__content
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 94rem;
+    @include small-tablet {
+    }
+  }
+
+  // .mold__info
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 40rem;
+    @include small-tablet {
+      gap: 166rem;
+    }
+  }
+
+  // .mold__text-wrap
+
+  &__text-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 28rem;
+  }
+
+  // .mold__text-box
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20rem;
+    @include small-tablet {
+      text-align: center;
+      align-items: center;
+      gap: 8rem;
+    }
+  }
+
+  // .mold__text-title
+
+  &__text-title {
+  }
+
+  // .mold__text-desc
+
+  &__text-desc {
+  }
+
+  // .mold__btn
+
+  &__btn {
+    width: fit-content;
+    @include small-tablet {
+      width: 100%;
+    }
+  }
+
+  // .mold__download
+
+  &__download {
+    display: flex;
+    align-items: center;
+    gap: 20rem;
+    border-radius: 20rem;
+    padding: 20rem 16rem 20rem 20rem;
+    background: $white;
+    @include small-tablet {
+      padding: 32rem 7.5rem 16rem;
+      border-radius: 12rem;
+      position: relative;
+    }
+  }
+
+  // .mold__download-img
+
+  &__download-img {
+    width: 326rem;
+    height: 187rem;
+    border-radius: 12rem;
+    overflow: hidden;
+    flex-shrink: 0;
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  // .mold__download-content
+
+  &__download-content {
+    flex-grow: 1;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    gap: 55em;
+    @include small-tablet {
+      text-align: center;
+      align-items: center;
+      gap: 20rem;
+    }
+  }
+
+  // .mold__download-title
+
+  &__download-title {
+  }
+
+  // .mold__download-link
+
+  &__download-link {
+    width: fit-content;
+    @include small-tablet {
+      width: 100%;
+    }
+  }
+
+  // .mold__img
+
+  &__img {
+    flex-shrink: 0;
+    width: 941rem;
+    height: 553rem;
+    position: relative;
+    @include small-tablet {
+      width: 351rem;
+      height: 193rem;
+      position: absolute;
+      top: -156rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    & img {
+      position: relative;
+      z-index: 2;
+    }
+    &::before {
+      width: 821rem;
+      height: 875rem;
+      position: absolute;
+      content: '';
+      top: -255rem;
+      left: 50%;
+      transform: translate(-50%);
+      background: url(./assets/images/moldBg.webp) no-repeat top/cover;
+      @include small-tablet {
+        display: none;
+      }
+    }
+  }
+}

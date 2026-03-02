@@ -1,0 +1,142 @@
+.wherefore {
+  background: $dark-gray;
+  // .wherefore__container
+
+  &__container {
+  }
+
+  // .wherefore__inner
+
+  &__inner {
+    padding: 80rem 0 120rem;
+    display: flex;
+    flex-direction: column;
+    gap: 40rem;
+    align-items: center;
+    @include small-tablet {
+      padding: 60rem 0;
+      gap: 20rem;
+    }
+  }
+
+  // .wherefore__content
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20rem;
+    @include small-tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 24rem;
+    }
+  }
+
+  // .wherefore__item
+
+  &__item {
+    display: flex;
+    gap: 20rem;
+    @include small-tablet {
+      flex-direction: column;
+      gap: 16rem;
+    }
+  }
+
+  // .wherefore__img
+
+  &__img {
+    width: 352rem;
+    min-height: 420rem;
+    height: 100%;
+
+    flex-shrink: 0;
+    border-radius: 32rem;
+    overflow: hidden;
+    background: $gray;
+    @include small-tablet {
+      width: 351rem;
+      height: 287rem;
+      min-height: unset;
+    }
+    & img {
+      object-fit: contain;
+      scale: 1.1;
+      transform-origin: top center;
+    }
+  }
+
+  // .wherefore__info
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20rem;
+    @include small-tablet {
+      gap: 16rem;
+    }
+  }
+
+  // .wherefore__subtitle
+
+  &__subtitle {
+    @include small-tablet {
+      text-align: center;
+    }
+  }
+
+  // .wherefore__list
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20rem;
+    width: 100%;
+    @include small-tablet {
+      gap: 8rem;
+    }
+  }
+
+  // .wherefore__link
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 68rem;
+    padding: 12rem 24rem;
+    background: $white;
+    border-radius: 60rem;
+    transition:
+      color 0.3s,
+      background 0.3s;
+    @include desk-only {
+      &:hover {
+        color: $white;
+        background: $pink-ginekologiya;
+      }
+    }
+    @include small-tablet {
+      min-height: 48rem;
+      padding: 3rem;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  // .wherefore__link-text
+
+  &__link-text {
+  }
+
+  // .wherefore__link-arr
+
+  &__link-arr {
+    @include small-tablet {
+      display: none;
+    }
+  }
+}
