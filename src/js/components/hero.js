@@ -3,7 +3,7 @@ import { rem } from '../utils/constants';
 function hero() {
   const section = document.querySelector('.hero');
 
-  if (!hero) return;
+  if (!section) return;
 
   if (window.innerWidth > 768) {
     const swiperEl = section.querySelector('.swiper');
