@@ -3,7 +3,7 @@ import { rem } from '../utils/constants';
 function help() {
   const section = document.querySelector('.help');
 
-  if (!help) return;
+  if (!section) return;
 
   const swiperEl = section.querySelector('.swiper');
 
