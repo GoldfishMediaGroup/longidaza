@@ -12,7 +12,7 @@ function faq() {
   //   });
 
   const $section = $('.faq');
-  if (!$section.length) return;
+  if (!$section) return;
 
   $section.on('click', '.acc', function () {
     const $item = $(this);

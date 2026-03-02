@@ -68,6 +68,7 @@
   border: 3rem solid $white;
   border-radius: 24rem;
   padding: 32rem;
+  cursor: pointer;
   @include small-tablet {
     border: 1.5rem solid $white;
     border-radius: 16rem;
