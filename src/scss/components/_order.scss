@@ -1,8 +1,13 @@
 .order {
   background: $light-gray;
   // .order__container
-  &--breadcrunbs {
-    padding-top: 40rem;
+  &--breadcrumbs {
+    & .order__inner {
+      padding-top: 40rem;
+      @include small-tablet {
+        padding: 20rem 0 60rem;
+      }
+    }
   }
   &__container {
   }

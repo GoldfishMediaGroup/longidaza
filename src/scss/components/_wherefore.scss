@@ -58,11 +58,11 @@
       width: 351rem;
       height: 287rem;
       min-height: unset;
-    }
-    & img {
-      object-fit: contain;
-      scale: 1.1;
-      transform-origin: top center;
+      & img {
+        object-fit: contain;
+        scale: 1.1;
+        transform-origin: top center;
+      }
     }
   }
 

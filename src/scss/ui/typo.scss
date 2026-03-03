@@ -73,6 +73,15 @@
   }
 }
 
+.txt22 {
+  font-size: 22rem;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  @include small-tablet {
+    font-size: 14rem;
+  }
+}
+
 .txt20 {
   font-weight: 400;
   font-size: 20rem;
@@ -117,9 +126,9 @@
 }
 
 .pink {
-  color: $pink-ginekologiya!important;
+  color: $pink-ginekologiya !important;
 }
 
 .white {
-  color: $white!important;
+  color: $white !important;
 }
