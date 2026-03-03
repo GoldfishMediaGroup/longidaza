@@ -7,6 +7,7 @@ import fancybox from '../utils/fancybox';
 import scroll from '../utils/scroll';
 
 import '../libs/dynamic_adapt';
+import header from '../components/header';
 import hero from '../components/hero';
 import help from '../components/help';
 import faq from '../components/faq';
@@ -26,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   scroll();
   fancybox();
+  header();
   hero();
   help();
   faq();
