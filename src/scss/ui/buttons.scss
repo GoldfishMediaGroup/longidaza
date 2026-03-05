@@ -4,7 +4,16 @@
   @include small-tablet {
     width: 100%;
   }
-  &:hover {
+  &--blue {
+    &::before {
+      background: linear-gradient(180deg, #017e90 0%, #00515d 100%) !important;
+    }
+    &:hover {
+      & span {
+        background: $green-urologiya;
+      }
+    }
+
     & span {
       background: $pink-ginekologiya;
     }

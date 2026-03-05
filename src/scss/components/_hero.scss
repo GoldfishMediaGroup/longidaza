@@ -122,7 +122,6 @@
   // .hero__swiper
 
   &__swiper {
-
   }
 
   // .hero__swiper-wrapper
@@ -137,7 +136,10 @@
   // .hero__slide
 
   &__slide {
-    height: auto;
+    height: auto !important;
+    @include small-tablet {
+      width: 100% !important;
+    }
   }
 
   // .hero__adv
