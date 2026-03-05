@@ -1,264 +1,600 @@
-<header class="header">
+<header class="header ">
   <div class="header__container container">
     <div class="header__inner">
       <div class="header__nav nav">
-        <div class="nav__logo">
-          <img src="./assets/images/logoHeader.svg" alt="" />
-        </div>
-        <div class="nav__info-wrap">
-          <div class="nav__billets billets">
-            <button class="billets__main" data-trigger="nav-modal-1">
-              <span class="billets__main-text-box">
-                <span class="billets__main-text txt18">Меню</span>
-              </span>
-              <span class="billets__main-arr">
-                <img src="./assets/images/arrAccBlack.svg" alt="" />
-              </span>
-            </button>
-            <div class="billets__btns">
-              <div class="billets__btn-wrapp">
-                <button class="billets__btn billets__btn--ginecologia" data-trigger="nav-modal-2">
-                  <span class="billets__btn-text-box">
-                    <span class="billets__btn-svg">
-                      <img src="./assets/images/womanSign.svg" alt="" />
+        <div class="nav__inner-wrapp">
+          <div class="nav__inner">
+            <a href="" class="nav__logo">
+              <img src="./assets/images/logoHeader.svg" alt="" />
+            </a>
+            <div class="nav__info-wrap">
+              <div class="nav__billets billets">
+                <button class="billets__main" data-trigger="nav-modal-1">
+                  <span class="billets__main-text-box">
+                    <span class="billets__main-text txt18">Меню</span>
+                  </span>
+                  <span class="billets__main-arr">
+                    <img src="./assets/images/arrAccBlack.svg" alt="" />
+                  </span>
+                </button>
+                <div class="billets__btns">
+                  <button class="billets__btn billets__btn--ginecologia" data-trigger="nav-modal-2">
+                    <span class="billets__btn-text-box">
+                      <span class="billets__btn-svg">
+                        <img src="./assets/images/womanSign.svg" alt="" />
+                      </span>
+                      <span class="billets__btn-text txt18 white">Гинекология</span>
                     </span>
-                    <span class="billets__btn-text txt18 white">Гинекология</span>
-                  </span>
-                  <span class="billets__btn-arr">
-                    <img src="./assets/images/arrAcc.svg" alt="" />
-                  </span>
-                </button>
-                <div class="billets__btn-modal" data-modal="nav-modal-2">
-                  <div class="billets__modal-list">
-                    <a href="#" class="billets__modal-link">
-                      <span class="billets__link-text h7">эндометриоз</span>
-                      <span class="billets__link-arr">
-                        <img src="./assets/images/arrRightBlack.svg" alt="" />
-                      </span>
-                    </a>
-                    <a href="#" class="billets__modal-link">
-                      <span class="billets__link-text h7">Воспалительные заболевания органов малого таза</span>
-                      <span class="billets__link-arr">
-                        <img src="./assets/images/arrRightBlack.svg" alt="" />
-                      </span>
-                    </a>
-                    <a href="#" class="billets__modal-link">
-                      <span class="billets__link-text h7">Послеоперационные спайки</span>
-                      <span class="billets__link-arr">
-                        <img src="./assets/images/arrRightBlack.svg" alt="" />
-                      </span>
-                    </a>
-                    <a href="#" class="billets__modal-link">
-                      <span class="billets__link-text h7">Хроническая тазовая боль</span>
-                      <span class="billets__link-arr">
-                        <img src="./assets/images/arrRightBlack.svg" alt="" />
-                      </span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="billets__btn-wrapp">
-                <button class="billets__btn billets__btn--urologia" data-trigger="nav-modal-3">
-                  <span class="billets__btn-text-box">
-                    <span class="billets__btn-svg">
-                      <img src="./assets/images/manSign.svg" alt="" />
+                    <span class="billets__btn-arr">
+                      <img src="./assets/images/arrAcc.svg" alt="" />
                     </span>
-                    <span class="billets__btn-text txt18 white">Урология</span>
+                  </button>
+                  <button class="billets__btn billets__btn--urologia" data-trigger="nav-modal-3">
+                    <span class="billets__btn-text-box">
+                      <span class="billets__btn-svg">
+                        <img src="./assets/images/manSign.svg" alt="" />
+                      </span>
+                      <span class="billets__btn-text txt18 white">Урология</span>
+                    </span>
+                    <span class="billets__btn-arr">
+                      <img src="./assets/images/arrAcc.svg" alt="" />
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <div class="nav__links links txt18">
+                <a class="links__link" href="#">
+                  <span class="links__text">Важно знать</span>
+                </a>
+                <a class="links__link" href="#">
+                  <span class="links__text">Вопрос-ответ</span>
+                </a>
+                <a class="links__link" href="#">
+                  <span class="links__img">
+                    <img src="./assets/images/bag.svg" alt="" />
                   </span>
-                  <span class="billets__btn-arr">
-                    <img src="./assets/images/arrAcc.svg" alt="" />
-                  </span>
-                </button>
-                <div class="billets__btn-modal" data-modal="nav-modal-3">
-                  <div class="billets__modal-list">
-                    <a href="#" class="billets__modal-link">
-                      <span class="billets__link-text h7">Простатит</span>
-                      <span class="billets__link-arr">
-                        <img src="./assets/images/arrRightBlack.svg" alt="" />
-                      </span>
-                    </a>
-                    <a href="#" class="billets__modal-link">
-                      <span class="billets__link-text h7">Аденома простаты</span>
-                      <span class="billets__link-arr">
-                        <img src="./assets/images/arrRightBlack.svg" alt="" />
-                      </span>
-                    </a>
-                    <a href="#" class="billets__modal-link">
-                      <span class="billets__link-text h7">Хроническая тазовая боль</span>
-                      <span class="billets__link-arr">
-                        <img src="./assets/images/arrRightBlack.svg" alt="" />
-                      </span>
-                    </a>
-                    <a href="#" class="billets__modal-link">
-                      <span class="billets__link-text h7">Хирургия</span>
-                      <span class="billets__link-arr">
-                        <img src="./assets/images/arrRightBlack.svg" alt="" />
-                      </span>
-                    </a>
-                  </div>
-                </div>
+                  <span class="links__text">Где купить?</span>
+                </a>
               </div>
             </div>
-          </div>
-          <div class="nav__links links txt18">
-            <a class="links__link" href="#">
-              <span class="links__text">Важно знать</span>
-            </a>
-            <a class="links__link" href="#">
-              <span class="links__text">Вопрос-ответ</span>
-            </a>
-            <a class="links__link" href="#">
-              <span class="links__img">
-                <img src="./assets/images/bag.svg" alt="" />
-              </span>
-              <span class="links__text">Где купить?</span>
-            </a>
-          </div>
-        </div>
 
-        <div class="header__menu-modal menu-modal " data-modal="nav-modal-1">
-          <div class="menu-modal__inner">
-            <div class="menu-modal__list-wrap">
-              <p class="menu-modal__list-title txt20">Меню сайта:</p>
-              <div class="menu-modal__list-box">
-                <ul class="menu-modal__list">
-                  <li>
-                    <p class="menu-modal__link" data-tab="tab1">
-                      <span class="menu-modal__link-text txt18 upper">дРУГИЕ НАПРАВЛЕНИЯ</span>
-                      <span class="menu-modal__link-arr">
-                        <img src="./assets/images/arrRightBlack.svg" alt="" />
-                      </span>
-                    </p>
-                  </li>
-                  <li>
-                    <a href="#" class="menu-modal__link">
-                      <span class="menu-modal__link-text txt18 upper">Инструкция</span>
-                      <span class="menu-modal__link-arr">
-                        <img src="./assets/images/arrRightBlack.svg" alt="" />
-                      </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="menu-modal__link">
-                      <span class="menu-modal__link-text txt18 upper">Механизм действия</span>
-                      <span class="menu-modal__link-arr">
-                        <img src="./assets/images/arrRightBlack.svg" alt="" />
-                      </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="menu-modal__link">
-                      <span class="menu-modal__link-text txt18 upper">Важно знать</span>
-                      <span class="menu-modal__link-arr">
-                        <img src="./assets/images/arrRightBlack.svg" alt="" />
-                      </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="menu-modal__link">
-                      <span class="menu-modal__link-text txt18 upper">Вопрос-ответ</span>
-                      <span class="menu-modal__link-arr">
-                        <img src="./assets/images/arrRightBlack.svg" alt="" />
-                      </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="menu-modal__link">
-                      <span class="menu-modal__link-text txt18 upper">Где купить?</span>
-                      <span class="menu-modal__link-arr">
-                        <img src="./assets/images/arrRightBlack.svg" alt="" />
-                      </span>
-                    </a>
-                  </li>
-                </ul>
-                <button class="menu-modal__btn btn-border">
-                  <span data-text="Вернуться на главную">Вернуться на главную</span>
-                </button>
-              </div>
-            </div>
-            <div class="menu-modal__content-wrap">
-              <div class="menu-modal__content-item content-main">
-                <p class="txt20">Основные направления:</p>
-                <div class="content-main__list">
-                  <a href="#" class="content-main__link">
-                    <div class="content-main__photo">
-                      <img src="./assets/images/ginoPhoto.webp" alt="" />
-                    </div>
-                    <p class="content-main__name txt22 bold upper">Гинекология</p>
-                  </a>
-
-                  <a href="#" class="content-main__link">
-                    <div class="content-main__photo">
-                      <img src="./assets/images/uroPhoto.webp" alt="" />
-                    </div>
-                    <p class="content-main__name txt22 bold upper">Урология</p>
-                  </a>
+            <div class="header__circle-btn-box">
+              <div class="header__circle-btn header__burger burger">
+                <div class="header__circle-svg burger__svg burger__svg--close">
+                  <img src="./assets/images/burgerClose.svg" alt="" />
+                </div>
+                <div class="header__circle-svg burger__svg burger__svg--open">
+                  <img src="./assets/images/burgerOpen.svg" alt="" />
                 </div>
               </div>
-              <div class="menu-modal__content-item content-other" data-content="tab1">
-                <div class="content-other__list-box">
-                  <p class="txt20">Другие направления:</p>
-
-                  <ul class="content-other__list">
-                    <li>
-                      <a href="#" class="content-other__link">
-                        <span class="content-other__link-text txt18">Дерматология</span>
-                        <span class="content-other__link-arr">
-                          <img src="./assets/images/arrRightBlack.svg" alt="" />
-                        </span>
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="#" class="content-other__link">
-                        <span class="content-other__link-text txt18">Косметология</span>
-                        <span class="content-other__link-arr">
-                          <img src="./assets/images/arrRightBlack.svg" alt="" />
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="content-other__link">
-                        <span class="content-other__link-text txt18">Хирургия</span>
-                        <span class="content-other__link-arr">
-                          <img src="./assets/images/arrRightBlack.svg" alt="" />
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="content-other__link">
-                        <span class="content-other__link-text txt18">Пульманология</span>
-                        <span class="content-other__link-arr">
-                          <img src="./assets/images/arrRightBlack.svg" alt="" />
-                        </span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="content-other__img">
-                  <img src="./assets/images/headerOtherImg.webp" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="header__circle-btn-box">
-          <div class="header__circle-btn header__burger burger">
-            <div class="header__circle-svg burger__svg burger__svg--close">
-              <img src="./assets/images/burgerClose.svg" alt="" />
-            </div>
-            <div class="header__circle-svg burger__svg burger__svg--open">
-              <img src="./assets/images/burgerOpen.svg" alt="" />
             </div>
           </div>
         </div>
       </div>
 
-      <div class="header__search seacrh"></div>
+      <div class="header__search search" data-da=".header__circle-btn-box, 768, first">
+        <div class="search__head">
+          <div class="search__head-inner">
+            <div class="search__input-wrap">
+              <input type="text" class="search__input txt20" placeholder="Введите поисковой запрос" />
+            </div>
+            <div class="search__btn-wrap">
+              <button class="search__btn search__open">
+                <div class="search__btn-svg">
+                  <img src="./assets/images/search.svg" alt="" />
+                </div>
+              </button>
+              <button class="search__btn search__clear">
+                <div class="search__btn-svg">
+                  <img src="./assets/images/clear.svg" alt="" />
+                </div>
+              </button>
+            </div>
+            <div class="search__close-btn">
+              <div class="search__close-btn-svg">
+                <img src="./assets/images/burgerOpen.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="search__modal">
+          <div class="search__modal-inner">
+            <div class="search__modal-item search__before">
+              <div class="search__before-head flex cv sb">
+                <p class="h6">Недавно искали</p>
+                <button class="search__before-clear h7 bold">очистить</button>
+              </div>
+
+              <ul class="search__before-list">
+                <li class="search__before-item">
+                  <div class="search__before-item-info">
+                    <div class="search__before-item-svg">
+                      <img src="./assets/images/time.svg" alt="" />
+                    </div>
+                    <a href="#" class="search__before-item-link txt20">Лонгидаза при эндометриозе</a>
+                  </div>
+                  <button class="search__before-item-remove">
+                    <img src="./assets/images/clear.svg" alt="" />
+                  </button>
+                </li>
+                <li class="search__before-item">
+                  <div class="search__before-item-info">
+                    <div class="search__before-item-svg">
+                      <img src="./assets/images/time.svg" alt="" />
+                    </div>
+                    <a href="#" class="search__before-item-link txt20">Лонгидаза при эндометриозе</a>
+                  </div>
+                  <button class="search__before-item-remove">
+                    <img src="./assets/images/clear.svg" alt="" />
+                  </button>
+                </li>
+                <li class="search__before-item">
+                  <div class="search__before-item-info">
+                    <div class="search__before-item-svg">
+                      <img src="./assets/images/time.svg" alt="" />
+                    </div>
+                    <a href="#" class="search__before-item-link txt20">Лонгидаза при эндометриозе</a>
+                  </div>
+                  <button class="search__before-item-remove">
+                    <img src="./assets/images/clear.svg" alt="" />
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="search__modal-item search__full">
+              <div class="search__full-head flex cv sb">
+                <p class="h6">Результаты поиска</p>
+                <p class="search__full-count txt20">4 результата</p>
+              </div>
+              <ul class="search__full-list">
+                <li class="search__full-item">
+                  <a href="#" class="search__full-link">
+                    <div class="search__full-link-info">
+                      <p class="search__full-link-title txt24 bold"><span class="pink">Эндометриоз</span></p>
+                      <p class="search__full-link-cat h7 bold">гинекология</p>
+                    </div>
+                    <div class="search__full-link-arr">
+                      <div class="search__full-link-svg">
+                        <img src="./assets/images/arrRightBlack.svg" alt="" />
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="search__full-item">
+                  <a href="#" class="search__full-link">
+                    <div class="search__full-link-info">
+                      <p class="search__full-link-title txt24 bold">
+                        Как возникает
+                        <span class="pink">эндометриоз</span>
+                        и как с ним бороться?
+                      </p>
+                      <p class="search__full-link-cat h7 bold">важно знать</p>
+                    </div>
+                    <div class="search__full-link-arr">
+                      <div class="search__full-link-svg">
+                        <img src="./assets/images/arrRightBlack.svg" alt="" />
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="search__full-item">
+                  <a href="#" class="search__full-link">
+                    <div class="search__full-link-info">
+                      <p class="search__full-link-title txt24 bold">
+                        Как я поборола
+                        <span class="pink">эндометриоз</span>
+                      </p>
+                      <p class="search__full-link-cat h7 bold">важно знать</p>
+                    </div>
+                    <div class="search__full-link-arr">
+                      <div class="search__full-link-svg">
+                        <img src="./assets/images/arrRightBlack.svg" alt="" />
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="search__full-item">
+                  <a href="#" class="search__full-link">
+                    <div class="search__full-link-info">
+                      <p class="search__full-link-cat h6 bold"><span class="pink">эндометриоз</span></p>
+                    </div>
+                    <div class="search__full-link-arr">
+                      <div class="search__full-link-svg">
+                        <img src="./assets/images/arrRightBlack.svg" alt="" />
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="search__modal-item search__empty">
+              <div class="search__empty-head flex cv sb">
+                <p class="h6">
+                  По вашему запросу ничего
+                  <br class="mobile" />
+                  не найдено
+                </p>
+              </div>
+              <p class="search__empty-text txt20">
+                По вашему запросу «выовфдылват» ничего не найдено. Попробуйте изменить ваш запрос
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <button class="header__btn btn-primary"><span>для специалистов</span></button>
+
+      <div class="header__burger-modal burger-modal">
+        <div class="burger-modal__inner">
+          <div class="burger-modal__main burger-modal__menu">
+            <div class="burger-modal__main-inner">
+              <div class="burger-modal__list-box">
+                <p class="burger-modal__title txt24">Меню сайта</p>
+                <ul class="burger-modal__list">
+                  <li>
+                    <button class="burger-modal__link" data-burger-trigger="other">
+                      <span class="burger-modal__link-text txt18 upper">дРУГИЕ НАПРАВЛЕНИЯ</span>
+                      <span class="burger-modal__link-arr">
+                        <img src="./assets/images/arrRightBlack.svg" alt="" />
+                      </span>
+                    </button>
+                  </li>
+                  <li>
+                    <a href="#" class="burger-modal__link">
+                      <span class="burger-modal__link-text txt18 upper">Инструкция</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="burger-modal__link">
+                      <span class="burger-modal__link-text txt18 upper">Механизм действия</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="burger-modal__link">
+                      <span class="burger-modal__link-text txt18 upper">Важно знать</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="burger-modal__link">
+                      <span class="burger-modal__link-text txt18 upper">Вопрос-ответ</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="burger-modal__link">
+                      <span class="burger-modal__link-text txt18 upper">Где купить?</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="burger-modal__list-box">
+                <p class="burger-modal__title txt24">Основные направления:</p>
+                <ul class="burger-modal__list-main">
+                  <li>
+                    <button class="burger-modal__list-btn" data-burger-trigger="gino">
+                      <div class="burger-modal__photo">
+                        <img src="./assets/images/ginoPhoto.webp" alt="" />
+                      </div>
+                      <p class="burger-modal__name txt22 bold upper">Гинекология</p>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="burger-modal__list-btn" data-burger-trigger="uro">
+                      <div class="burger-modal__photo">
+                        <img src="./assets/images/uroPhoto.webp" alt="" />
+                      </div>
+                      <p class="burger-modal__name txt22 bold upper">Урология</p>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="burger-modal__aside burger-modal__menu" data-burger-aside="other">
+            <div class="burger-modal__aside-inner">
+              <div class="burger-modal__aside-content">
+                <button class="burger-modal__back" data-burger-back>
+                  <div class="burger-modal__back-arr">
+                    <div class="burger-modal__back-svg">
+                      <img src="./assets/images/arrLeftBlack.svg" alt="" />
+                    </div>
+                  </div>
+                  <p class="burger-modal__back-text txt24">Назад</p>
+                </button>
+                <div class="burger-modal__list-box">
+                  <p class="burger-modal__title txt24">Другие направления:</p>
+                  <ul class="burger-modal__list">
+                    <li>
+                      <a href="#" class="burger-modal__link">
+                        <span class="burger-modal__link-text txt18">Дерматология</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="burger-modal__link">
+                        <span class="burger-modal__link-text txt18">Косметология</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="burger-modal__link">
+                        <span class="burger-modal__link-text txt18">Хирургия</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="burger-modal__link">
+                        <span class="burger-modal__link-text txt18">Косметология</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="burger-modal__aside burger-modal__menu" data-burger-aside="gino">
+            <div class="burger-modal__aside-inner">
+              <div class="burger-modal__aside-content">
+                <button class="burger-modal__back" data-burger-back>
+                  <div class="burger-modal__back-arr">
+                    <div class="burger-modal__back-svg">
+                      <img src="./assets/images/arrLeftBlack.svg" alt="" />
+                    </div>
+                  </div>
+                  <p class="burger-modal__back-text txt24">Назад</p>
+                </button>
+                <div class="burger-modal__list-box">
+                  <p class="burger-modal__title txt24">Гинекология</p>
+                  <ul class="burger-modal__list">
+                    <li>
+                      <a href="#" class="burger-modal__link">
+                        <span class="burger-modal__link-text txt18 upper">Эндометриоз</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="burger-modal__link">
+                        <span class="burger-modal__link-text txt18 upper">Воспалительные заболевания органов малого таза</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="burger-modal__link">
+                        <span class="burger-modal__link-text txt18 upper">Послеоперационные спайки</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="burger-modal__link">
+                        <span class="burger-modal__link-text txt18 upper">Хроническая тазовая боль</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a href="#" class="burger-modal__btn btn-primary"><span>Перейти в раздел гинекология</span></a>
+            </div>
+          </div>
+          <div class="burger-modal__aside burger-modal__menu" data-burger-aside="uro">
+            <div class="burger-modal__aside-inner">
+              <div class="burger-modal__aside-content">
+                <button class="burger-modal__back" data-burger-back>
+                  <div class="burger-modal__back-arr">
+                    <div class="burger-modal__back-svg">
+                      <img src="./assets/images/arrLeftBlack.svg" alt="" />
+                    </div>
+                  </div>
+                  <p class="burger-modal__back-text txt24">Назад</p>
+                </button>
+                <div class="burger-modal__list-box">
+                  <p class="burger-modal__title txt24">Урология</p>
+                  <ul class="burger-modal__list">
+                    <li>
+                      <a href="#" class="burger-modal__link">
+                        <span class="burger-modal__link-text txt18 upper">Простатит</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="burger-modal__link">
+                        <span class="burger-modal__link-text txt18 upper">Аденома простаты</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="burger-modal__link">
+                        <span class="burger-modal__link-text txt18 upper">Хроническая тазовая боль</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="burger-modal__link">
+                        <span class="burger-modal__link-text txt18 upper">Хирургия</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a href="#" class="burger-modal__btn btn-primary btn-primary--blue"><span>Перейти в раздел урология</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__menu-modal menu-modal" data-modal="nav-modal-1">
+        <div class="menu-modal__inner">
+          <div class="menu-modal__list-wrap">
+            <p class="menu-modal__list-title txt20">Меню сайта:</p>
+            <div class="menu-modal__list-box">
+              <ul class="menu-modal__list">
+                <li>
+                  <p class="menu-modal__link" data-tab="tab1">
+                    <span class="menu-modal__link-text txt18 upper">дРУГИЕ НАПРАВЛЕНИЯ</span>
+                    <span class="menu-modal__link-arr">
+                      <img src="./assets/images/arrRightBlack.svg" alt="" />
+                    </span>
+                  </p>
+                </li>
+                <li>
+                  <a href="#" class="menu-modal__link">
+                    <span class="menu-modal__link-text txt18 upper">Инструкция</span>
+                    <span class="menu-modal__link-arr">
+                      <img src="./assets/images/arrRightBlack.svg" alt="" />
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="menu-modal__link">
+                    <span class="menu-modal__link-text txt18 upper">Механизм действия</span>
+                    <span class="menu-modal__link-arr">
+                      <img src="./assets/images/arrRightBlack.svg" alt="" />
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="menu-modal__link">
+                    <span class="menu-modal__link-text txt18 upper">Важно знать</span>
+                    <span class="menu-modal__link-arr">
+                      <img src="./assets/images/arrRightBlack.svg" alt="" />
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="menu-modal__link">
+                    <span class="menu-modal__link-text txt18 upper">Вопрос-ответ</span>
+                    <span class="menu-modal__link-arr">
+                      <img src="./assets/images/arrRightBlack.svg" alt="" />
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="menu-modal__link">
+                    <span class="menu-modal__link-text txt18 upper">Где купить?</span>
+                    <span class="menu-modal__link-arr">
+                      <img src="./assets/images/arrRightBlack.svg" alt="" />
+                    </span>
+                  </a>
+                </li>
+              </ul>
+              <button class="menu-modal__btn btn-border">
+                <span data-text="Вернуться на главную">Вернуться на главную</span>
+              </button>
+            </div>
+          </div>
+          <div class="menu-modal__content-wrap">
+            <div class="menu-modal__content-item content-main">
+              <p class="txt20">Основные направления:</p>
+              <div class="content-main__list">
+                <a href="#" class="content-main__link">
+                  <div class="content-main__photo">
+                    <img src="./assets/images/ginoPhoto.webp" alt="" />
+                  </div>
+                  <p class="content-main__name txt22 bold upper">Гинекология</p>
+                </a>
+
+                <a href="#" class="content-main__link">
+                  <div class="content-main__photo">
+                    <img src="./assets/images/uroPhoto.webp" alt="" />
+                  </div>
+                  <p class="content-main__name txt22 bold upper">Урология</p>
+                </a>
+              </div>
+            </div>
+            <div class="menu-modal__content-item content-other" data-content="tab1">
+              <div class="content-other__list-box">
+                <p class="txt20">Другие направления:</p>
+
+                <ul class="content-other__list">
+                  <li>
+                    <a href="#" class="content-other__link">
+                      <span class="content-other__link-text txt18">Дерматология</span>
+                      <span class="content-other__link-arr">
+                        <img src="./assets/images/arrRightBlack.svg" alt="" />
+                      </span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="content-other__link">
+                      <span class="content-other__link-text txt18">Косметология</span>
+                      <span class="content-other__link-arr">
+                        <img src="./assets/images/arrRightBlack.svg" alt="" />
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="content-other__link">
+                      <span class="content-other__link-text txt18">Хирургия</span>
+                      <span class="content-other__link-arr">
+                        <img src="./assets/images/arrRightBlack.svg" alt="" />
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="content-other__link">
+                      <span class="content-other__link-text txt18">Пульманология</span>
+                      <span class="content-other__link-arr">
+                        <img src="./assets/images/arrRightBlack.svg" alt="" />
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="content-other__img">
+                <img src="./assets/images/headerOtherImg.webp" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="billets__btn-modal" data-modal="nav-modal-2">
+        <div class="billets__modal-list">
+          <a href="#" class="billets__modal-link">
+            <span class="billets__link-text h7">эндометриоз</span>
+            <span class="billets__link-arr">
+              <img src="./assets/images/arrRightBlack.svg" alt="" />
+            </span>
+          </a>
+          <a href="#" class="billets__modal-link">
+            <span class="billets__link-text h7">Воспалительные заболевания органов малого таза</span>
+            <span class="billets__link-arr">
+              <img src="./assets/images/arrRightBlack.svg" alt="" />
+            </span>
+          </a>
+          <a href="#" class="billets__modal-link">
+            <span class="billets__link-text h7">Послеоперационные спайки</span>
+            <span class="billets__link-arr">
+              <img src="./assets/images/arrRightBlack.svg" alt="" />
+            </span>
+          </a>
+          <a href="#" class="billets__modal-link">
+            <span class="billets__link-text h7">Хроническая тазовая боль</span>
+            <span class="billets__link-arr">
+              <img src="./assets/images/arrRightBlack.svg" alt="" />
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="billets__btn-modal" data-modal="nav-modal-3">
+        <div class="billets__modal-list">
+          <a href="#" class="billets__modal-link">
+            <span class="billets__link-text h7">Простатит</span>
+            <span class="billets__link-arr">
+              <img src="./assets/images/arrRightBlack.svg" alt="" />
+            </span>
+          </a>
+          <a href="#" class="billets__modal-link">
+            <span class="billets__link-text h7">Аденома простаты</span>
+            <span class="billets__link-arr">
+              <img src="./assets/images/arrRightBlack.svg" alt="" />
+            </span>
+          </a>
+          <a href="#" class="billets__modal-link">
+            <span class="billets__link-text h7">Хроническая тазовая боль</span>
+            <span class="billets__link-arr">
+              <img src="./assets/images/arrRightBlack.svg" alt="" />
+            </span>
+          </a>
+          <a href="#" class="billets__modal-link">
+            <span class="billets__link-text h7">Хирургия</span>
+            <span class="billets__link-arr">
+              <img src="./assets/images/arrRightBlack.svg" alt="" />
+            </span>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </header>
