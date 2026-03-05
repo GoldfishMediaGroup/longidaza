@@ -1,0 +1,1393 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://api-maps.yandex.ru/v3/?apikey=cb93da52-9741-4ffe-86ea-93a91ce99a1c&lang=ru_RU"></script>
+    <title>Главная</title>
+  <script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header ">
+  <div class="header__container container">
+    <div class="header__inner">
+      <div class="header__nav nav">
+        <div class="nav__inner-wrapp">
+          <div class="nav__inner">
+            <a href="" class="nav__logo">
+              <img src="./assets/images/logoHeader.svg" alt="">
+            </a>
+            <div class="nav__info-wrap">
+              <div class="nav__billets billets">
+                <button class="billets__main" data-trigger="nav-modal-1">
+                  <span class="billets__main-text-box">
+                    <span class="billets__main-text txt18">Меню</span>
+                  </span>
+                  <span class="billets__main-arr">
+                    <img src="./assets/images/arrAccBlack.svg" alt="">
+                  </span>
+                </button>
+                <div class="billets__btns">
+                  <button class="billets__btn billets__btn--ginecologia" data-trigger="nav-modal-2">
+                    <span class="billets__btn-text-box">
+                      <span class="billets__btn-svg">
+                        <img src="./assets/images/womanSign.svg" alt="">
+                      </span>
+                      <span class="billets__btn-text txt18 white">Гинекология</span>
+                    </span>
+                    <span class="billets__btn-arr">
+                      <img src="./assets/images/arrAcc.svg" alt="">
+                    </span>
+                  </button>
+                  <button class="billets__btn billets__btn--urologia" data-trigger="nav-modal-3">
+                    <span class="billets__btn-text-box">
+                      <span class="billets__btn-svg">
+                        <img src="./assets/images/manSign.svg" alt="">
+                      </span>
+                      <span class="billets__btn-text txt18 white">Урология</span>
+                    </span>
+                    <span class="billets__btn-arr">
+                      <img src="./assets/images/arrAcc.svg" alt="">
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <div class="nav__links links txt18">
+                <a class="links__link" href="#">
+                  <span class="links__text">Важно знать</span>
+                </a>
+                <a class="links__link" href="#">
+                  <span class="links__text">Вопрос-ответ</span>
+                </a>
+                <a class="links__link" href="#">
+                  <span class="links__img">
+                    <img src="./assets/images/bag.svg" alt="">
+                  </span>
+                  <span class="links__text">Где купить?</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="header__circle-btn-box">
+              <div class="header__circle-btn header__burger burger">
+                <div class="header__circle-svg burger__svg burger__svg--close">
+                  <img src="./assets/images/burgerClose.svg" alt="">
+                </div>
+                <div class="header__circle-svg burger__svg burger__svg--open">
+                  <img src="./assets/images/burgerOpen.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__search search" data-da=".header__circle-btn-box, 768, first">
+        <div class="search__head">
+          <div class="search__head-inner">
+            <div class="search__input-wrap">
+              <input type="text" class="search__input txt20" placeholder="Введите поисковой запрос">
+            </div>
+            <div class="search__btn-wrap">
+              <button class="search__btn search__open">
+                <div class="search__btn-svg">
+                  <img src="./assets/images/search.svg" alt="">
+                </div>
+              </button>
+              <button class="search__btn search__clear">
+                <div class="search__btn-svg">
+                  <img src="./assets/images/clear.svg" alt="">
+                </div>
+              </button>
+            </div>
+            <div class="search__close-btn">
+              <div class="search__close-btn-svg">
+                <img src="./assets/images/burgerOpen.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="search__modal">
+          <div class="search__modal-inner">
+            <div class="search__modal-item search__before">
+              <div class="search__before-head flex cv sb">
+                <p class="h6">Недавно искали</p>
+                <button class="search__before-clear h7 bold">очистить</button>
+              </div>
+
+              <ul class="search__before-list">
+                <li class="search__before-item">
+                  <div class="search__before-item-info">
+                    <div class="search__before-item-svg">
+                      <img src="./assets/images/time.svg" alt="">
+                    </div>
+                    <a href="#" class="search__before-item-link txt20">Лонгидаза при эндометриозе</a>
+                  </div>
+                  <button class="search__before-item-remove">
+                    <img src="./assets/images/clear.svg" alt="">
+                  </button>
+                </li>
+                <li class="search__before-item">
+                  <div class="search__before-item-info">
+                    <div class="search__before-item-svg">
+                      <img src="./assets/images/time.svg" alt="">
+                    </div>
+                    <a href="#" class="search__before-item-link txt20">Лонгидаза при эндометриозе</a>
+                  </div>
+                  <button class="search__before-item-remove">
+                    <img src="./assets/images/clear.svg" alt="">
+                  </button>
+                </li>
+                <li class="search__before-item">
+                  <div class="search__before-item-info">
+                    <div class="search__before-item-svg">
+                      <img src="./assets/images/time.svg" alt="">
+                    </div>
+                    <a href="#" class="search__before-item-link txt20">Лонгидаза при эндометриозе</a>
+                  </div>
+                  <button class="search__before-item-remove">
+                    <img src="./assets/images/clear.svg" alt="">
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="search__modal-item search__full">
+              <div class="search__full-head flex cv sb">
+                <p class="h6">Результаты поиска</p>
+                <p class="search__full-count txt20">4 результата</p>
+              </div>
+              <ul class="search__full-list">
+                <li class="search__full-item">
+                  <a href="#" class="search__full-link">
+                    <div class="search__full-link-info">
+                      <p class="search__full-link-title txt24 bold"><span class="pink">Эндометриоз</span></p>
+                      <p class="search__full-link-cat h7 bold">гинекология</p>
+                    </div>
+                    <div class="search__full-link-arr">
+                      <div class="search__full-link-svg">
+                        <img src="./assets/images/arrRightBlack.svg" alt="">
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="search__full-item">
+                  <a href="#" class="search__full-link">
+                    <div class="search__full-link-info">
+                      <p class="search__full-link-title txt24 bold">
+                        Как возникает
+                        <span class="pink">эндометриоз</span>
+                        и как с ним бороться?
+                      </p>
+                      <p class="search__full-link-cat h7 bold">важно знать</p>
+                    </div>
+                    <div class="search__full-link-arr">
+                      <div class="search__full-link-svg">
+                        <img src="./assets/images/arrRightBlack.svg" alt="">
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="search__full-item">
+                  <a href="#" class="search__full-link">
+                    <div class="search__full-link-info">
+                      <p class="search__full-link-title txt24 bold">
+                        Как я поборола
+                        <span class="pink">эндометриоз</span>
+                      </p>
+                      <p class="search__full-link-cat h7 bold">важно знать</p>
+                    </div>
+                    <div class="search__full-link-arr">
+                      <div class="search__full-link-svg">
+                        <img src="./assets/images/arrRightBlack.svg" alt="">
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="search__full-item">
+                  <a href="#" class="search__full-link">
+                    <div class="search__full-link-info">
+                      <p class="search__full-link-cat h6 bold"><span class="pink">эндометриоз</span></p>
+                    </div>
+                    <div class="search__full-link-arr">
+                      <div class="search__full-link-svg">
+                        <img src="./assets/images/arrRightBlack.svg" alt="">
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="search__modal-item search__empty">
+              <div class="search__empty-head flex cv sb">
+                <p class="h6">
+                  По вашему запросу ничего
+                  <br class="mobile">
+                  не найдено
+                </p>
+              </div>
+              <p class="search__empty-text txt20">
+                По вашему запросу «выовфдылват» ничего не найдено. Попробуйте изменить ваш запрос
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="header__btn btn-primary"><span>для специалистов</span></button>
+
+      <div class="header__burger-modal burger-modal">
+        <div class="burger-modal__inner">
+          <div class="burger-modal__main burger-modal__menu">
+            <div class="burger-modal__main-inner">
+              <div class="burger-modal__list-box">
+                <p class="burger-modal__title txt24">Меню сайта</p>
+                <ul class="burger-modal__list">
+                  <li>
+                    <button class="burger-modal__link" data-burger-trigger="other">
+                      <span class="burger-modal__link-text txt18 upper">дРУГИЕ НАПРАВЛЕНИЯ</span>
+                      <span class="burger-modal__link-arr">
+                        <img src="./assets/images/arrRightBlack.svg" alt="">
+                      </span>
+                    </button>
+                  </li>
+                  <li>
+                    <a href="#" class="burger-modal__link">
+                      <span class="burger-modal__link-text txt18 upper">Инструкция</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="burger-modal__link">
+                      <span class="burger-modal__link-text txt18 upper">Механизм действия</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="burger-modal__link">
+                      <span class="burger-modal__link-text txt18 upper">Важно знать</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="burger-modal__link">
+                      <span class="burger-modal__link-text txt18 upper">Вопрос-ответ</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="burger-modal__link">
+                      <span class="burger-modal__link-text txt18 upper">Где купить?</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="burger-modal__list-box">
+                <p class="burger-modal__title txt24">Основные направления:</p>
+                <ul class="burger-modal__list-main">
+                  <li>
+                    <button class="burger-modal__list-btn" data-burger-trigger="gino">
+                      <div class="burger-modal__photo">
+                        <img src="./assets/images/ginoPhoto.webp" alt="">
+                      </div>
+                      <p class="burger-modal__name txt22 bold upper">Гинекология</p>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="burger-modal__list-btn" data-burger-trigger="uro">
+                      <div class="burger-modal__photo">
+                        <img src="./assets/images/uroPhoto.webp" alt="">
+                      </div>
+                      <p class="burger-modal__name txt22 bold upper">Урология</p>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="burger-modal__aside burger-modal__menu" data-burger-aside="other">
+            <div class="burger-modal__aside-inner">
+              <div class="burger-modal__aside-content">
+                <button class="burger-modal__back" data-burger-back="">
+                  <div class="burger-modal__back-arr">
+                    <div class="burger-modal__back-svg">
+                      <img src="./assets/images/arrLeftBlack.svg" alt="">
+                    </div>
+                  </div>
+                  <p class="burger-modal__back-text txt24">Назад</p>
+                </button>
+                <div class="burger-modal__list-box">
+                  <p class="burger-modal__title txt24">Другие направления:</p>
+                  <ul class="burger-modal__list">
+                    <li>
+                      <a href="#" class="burger-modal__link">
+                        <span class="burger-modal__link-text txt18">Дерматология</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="burger-modal__link">
+                        <span class="burger-modal__link-text txt18">Косметология</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="burger-modal__link">
+                        <span class="burger-modal__link-text txt18">Хирургия</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="burger-modal__link">
+                        <span class="burger-modal__link-text txt18">Косметология</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="burger-modal__aside burger-modal__menu" data-burger-aside="gino">
+            <div class="burger-modal__aside-inner">
+              <div class="burger-modal__aside-content">
+                <button class="burger-modal__back" data-burger-back="">
+                  <div class="burger-modal__back-arr">
+                    <div class="burger-modal__back-svg">
+                      <img src="./assets/images/arrLeftBlack.svg" alt="">
+                    </div>
+                  </div>
+                  <p class="burger-modal__back-text txt24">Назад</p>
+                </button>
+                <div class="burger-modal__list-box">
+                  <p class="burger-modal__title txt24">Гинекология</p>
+                  <ul class="burger-modal__list">
+                    <li>
+                      <a href="#" class="burger-modal__link">
+                        <span class="burger-modal__link-text txt18 upper">Эндометриоз</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="burger-modal__link">
+                        <span class="burger-modal__link-text txt18 upper">Воспалительные заболевания органов малого таза</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="burger-modal__link">
+                        <span class="burger-modal__link-text txt18 upper">Послеоперационные спайки</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="burger-modal__link">
+                        <span class="burger-modal__link-text txt18 upper">Хроническая тазовая боль</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a href="#" class="burger-modal__btn btn-primary"><span>Перейти в раздел гинекология</span></a>
+            </div>
+          </div>
+          <div class="burger-modal__aside burger-modal__menu" data-burger-aside="uro">
+            <div class="burger-modal__aside-inner">
+              <div class="burger-modal__aside-content">
+                <button class="burger-modal__back" data-burger-back="">
+                  <div class="burger-modal__back-arr">
+                    <div class="burger-modal__back-svg">
+                      <img src="./assets/images/arrLeftBlack.svg" alt="">
+                    </div>
+                  </div>
+                  <p class="burger-modal__back-text txt24">Назад</p>
+                </button>
+                <div class="burger-modal__list-box">
+                  <p class="burger-modal__title txt24">Урология</p>
+                  <ul class="burger-modal__list">
+                    <li>
+                      <a href="#" class="burger-modal__link">
+                        <span class="burger-modal__link-text txt18 upper">Простатит</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="burger-modal__link">
+                        <span class="burger-modal__link-text txt18 upper">Аденома простаты</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="burger-modal__link">
+                        <span class="burger-modal__link-text txt18 upper">Хроническая тазовая боль</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="burger-modal__link">
+                        <span class="burger-modal__link-text txt18 upper">Хирургия</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a href="#" class="burger-modal__btn btn-primary btn-primary--blue"><span>Перейти в раздел урология</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__menu-modal menu-modal" data-modal="nav-modal-1">
+        <div class="menu-modal__inner">
+          <div class="menu-modal__list-wrap">
+            <p class="menu-modal__list-title txt20">Меню сайта:</p>
+            <div class="menu-modal__list-box">
+              <ul class="menu-modal__list">
+                <li>
+                  <p class="menu-modal__link" data-tab="tab1">
+                    <span class="menu-modal__link-text txt18 upper">дРУГИЕ НАПРАВЛЕНИЯ</span>
+                    <span class="menu-modal__link-arr">
+                      <img src="./assets/images/arrRightBlack.svg" alt="">
+                    </span>
+                  </p>
+                </li>
+                <li>
+                  <a href="#" class="menu-modal__link">
+                    <span class="menu-modal__link-text txt18 upper">Инструкция</span>
+                    <span class="menu-modal__link-arr">
+                      <img src="./assets/images/arrRightBlack.svg" alt="">
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="menu-modal__link">
+                    <span class="menu-modal__link-text txt18 upper">Механизм действия</span>
+                    <span class="menu-modal__link-arr">
+                      <img src="./assets/images/arrRightBlack.svg" alt="">
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="menu-modal__link">
+                    <span class="menu-modal__link-text txt18 upper">Важно знать</span>
+                    <span class="menu-modal__link-arr">
+                      <img src="./assets/images/arrRightBlack.svg" alt="">
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="menu-modal__link">
+                    <span class="menu-modal__link-text txt18 upper">Вопрос-ответ</span>
+                    <span class="menu-modal__link-arr">
+                      <img src="./assets/images/arrRightBlack.svg" alt="">
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="menu-modal__link">
+                    <span class="menu-modal__link-text txt18 upper">Где купить?</span>
+                    <span class="menu-modal__link-arr">
+                      <img src="./assets/images/arrRightBlack.svg" alt="">
+                    </span>
+                  </a>
+                </li>
+              </ul>
+              <button class="menu-modal__btn btn-border">
+                <span data-text="Вернуться на главную">Вернуться на главную</span>
+              </button>
+            </div>
+          </div>
+          <div class="menu-modal__content-wrap">
+            <div class="menu-modal__content-item content-main">
+              <p class="txt20">Основные направления:</p>
+              <div class="content-main__list">
+                <a href="#" class="content-main__link">
+                  <div class="content-main__photo">
+                    <img src="./assets/images/ginoPhoto.webp" alt="">
+                  </div>
+                  <p class="content-main__name txt22 bold upper">Гинекология</p>
+                </a>
+
+                <a href="#" class="content-main__link">
+                  <div class="content-main__photo">
+                    <img src="./assets/images/uroPhoto.webp" alt="">
+                  </div>
+                  <p class="content-main__name txt22 bold upper">Урология</p>
+                </a>
+              </div>
+            </div>
+            <div class="menu-modal__content-item content-other" data-content="tab1">
+              <div class="content-other__list-box">
+                <p class="txt20">Другие направления:</p>
+
+                <ul class="content-other__list">
+                  <li>
+                    <a href="#" class="content-other__link">
+                      <span class="content-other__link-text txt18">Дерматология</span>
+                      <span class="content-other__link-arr">
+                        <img src="./assets/images/arrRightBlack.svg" alt="">
+                      </span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="content-other__link">
+                      <span class="content-other__link-text txt18">Косметология</span>
+                      <span class="content-other__link-arr">
+                        <img src="./assets/images/arrRightBlack.svg" alt="">
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="content-other__link">
+                      <span class="content-other__link-text txt18">Хирургия</span>
+                      <span class="content-other__link-arr">
+                        <img src="./assets/images/arrRightBlack.svg" alt="">
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="content-other__link">
+                      <span class="content-other__link-text txt18">Пульманология</span>
+                      <span class="content-other__link-arr">
+                        <img src="./assets/images/arrRightBlack.svg" alt="">
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="content-other__img">
+                <img src="./assets/images/headerOtherImg.webp" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="billets__btn-modal" data-modal="nav-modal-2">
+        <div class="billets__modal-list">
+          <a href="#" class="billets__modal-link">
+            <span class="billets__link-text h7">эндометриоз</span>
+            <span class="billets__link-arr">
+              <img src="./assets/images/arrRightBlack.svg" alt="">
+            </span>
+          </a>
+          <a href="#" class="billets__modal-link">
+            <span class="billets__link-text h7">Воспалительные заболевания органов малого таза</span>
+            <span class="billets__link-arr">
+              <img src="./assets/images/arrRightBlack.svg" alt="">
+            </span>
+          </a>
+          <a href="#" class="billets__modal-link">
+            <span class="billets__link-text h7">Послеоперационные спайки</span>
+            <span class="billets__link-arr">
+              <img src="./assets/images/arrRightBlack.svg" alt="">
+            </span>
+          </a>
+          <a href="#" class="billets__modal-link">
+            <span class="billets__link-text h7">Хроническая тазовая боль</span>
+            <span class="billets__link-arr">
+              <img src="./assets/images/arrRightBlack.svg" alt="">
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="billets__btn-modal" data-modal="nav-modal-3">
+        <div class="billets__modal-list">
+          <a href="#" class="billets__modal-link">
+            <span class="billets__link-text h7">Простатит</span>
+            <span class="billets__link-arr">
+              <img src="./assets/images/arrRightBlack.svg" alt="">
+            </span>
+          </a>
+          <a href="#" class="billets__modal-link">
+            <span class="billets__link-text h7">Аденома простаты</span>
+            <span class="billets__link-arr">
+              <img src="./assets/images/arrRightBlack.svg" alt="">
+            </span>
+          </a>
+          <a href="#" class="billets__modal-link">
+            <span class="billets__link-text h7">Хроническая тазовая боль</span>
+            <span class="billets__link-arr">
+              <img src="./assets/images/arrRightBlack.svg" alt="">
+            </span>
+          </a>
+          <a href="#" class="billets__modal-link">
+            <span class="billets__link-text h7">Хирургия</span>
+            <span class="billets__link-arr">
+              <img src="./assets/images/arrRightBlack.svg" alt="">
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <a href="#" class="where-arr">
+  <div class="where-arr__arr">
+    <div class="where-arr__arr-svg">
+      <img src="./assets/images/arrLeftBlack.svg" alt="">
+    </div>
+  </div>
+  <div class="where-arr__content">
+    <div class="where-arr__btn">
+      <p class="txt18 white">где купить</p>
+    </div>
+  </div>
+</a>
+
+      <main>
+        <section class="hero">
+  <div class="hero__container container">
+    <div class="hero__inner">
+      <div class="hero__content">
+        <div class="hero__info">
+          <div class="hero__billet">
+            <div class="hero__billet-img">
+              <img src="./assets/images/heroBillet.webp" alt="">
+            </div>
+            <p class="hero__billet-text txt16">
+              Оригинальность молекулы
+              <br>
+              признана Всемирной Организацией Здравоохранения
+            </p>
+          </div>
+
+          <p class="hero__title txt40">
+            Лонгидаза
+            <sup>®</sup>
+            начинает работать
+            <span class="pink">
+              уже с&nbsp;1-го дня применения
+              <sup>1</sup>
+            </span>
+            и&nbsp;защищает от&nbsp;обострений в&nbsp;течение года
+            <sup>2,3</sup>
+          </p>
+        </div>
+        <div class="hero__img">
+          <img src="./assets/images/heroDrug.webp" alt="">
+        </div>
+      </div>
+      <div class="hero__swiper-box">
+        <div class="hero__swiper swiper">
+          <div class="hero__swiper-wrapper swiper-wrapper">
+            <div class="hero__slide swiper-slide">
+              <div class="hero__adv">
+                <div class="hero__adv-content">
+                  <p class="hero__adv-title pink h4">Устраняет воспаление</p>
+                  <p class="hero__adv-text txt24">
+                    Доказано снижает уровень прововоспалительных элементов
+                    <sup>4</sup>
+                    &nbsp;
+                  </p>
+                </div>
+                <p class="hero__adv-num">1</p>
+              </div>
+            </div>
+            <div class="hero__slide swiper-slide">
+              <div class="hero__adv">
+                <div class="hero__adv-content">
+                  <p class="hero__adv-title pink h4">Повышает эффективность терапии</p>
+                  <p class="hero__adv-text txt24">
+                    Разрушает защитную оболочку бактерий, открывая доступ антибиотикам
+                    <sup>5</sup>
+                    &nbsp;
+                  </p>
+                </div>
+                <p class="hero__adv-num">2</p>
+              </div>
+            </div>
+            <div class="hero__slide swiper-slide">
+              <div class="hero__adv">
+                <div class="hero__adv-content">
+                  <p class="hero__adv-title pink h4">Восстанавливает структуру тканей</p>
+                  <p class="hero__adv-text txt24">
+                    Рассасывает внутренние уплотнения, сохраняя естественную подвижность органов
+                    <sup>1</sup>
+                  </p>
+                </div>
+                <p class="hero__adv-num">3</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__nav-box swiper-btn-box">
+          <button class="hero__swiper-btn hero__swiper-btn--next swiper-button swiper-button--prev">
+            <div class="swiper-button__svg-wrap">
+              <div class="swiper-button__svg">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.5417 16.6001L7.10835 11.1668C6.46669 10.5251 6.46669 9.47509 7.10835 8.83342L12.5417 3.40009" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+            </div>
+          </button>
+          <button class="hero__swiper-btn hero__swiper-btn--next swiper-button swiper-button--next">
+            <div class="swiper-button__svg-wrap">
+              <div class="swiper-button__svg">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.45828 3.39991L12.8916 8.83325C13.5333 9.47491 13.5333 10.5249 12.8916 11.1666L7.45828 16.5999" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="wherefore section-wrap">
+  <div class="wherefore__container container">
+    <div class="wherefore__inner">
+      <p class="h1 center white">
+        ЛОНГИДАЗА<sup>®</sup>
+        Для чего назначают?
+      </p>
+      <div class="wherefore__content">
+        <div class="wherefore__item">
+          <div class="wherefore__img">
+            <img src="./assets/images/wherefore1.webp" alt="">
+          </div>
+          <div class="wherefore__info">
+            <p class="wherefore__subtitle txt32 white">Гинекология:</p>
+            <ul class="wherefore__list">
+              <li>
+                <a href="#" class="wherefore__link">
+                  <div class="wherefore__link-text h7 bold">Эндометриоз</div>
+                  <div class="wherefore__link-arr">
+                    <img src="./assets/images/arrWhite.svg" alt="">
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="wherefore__link">
+                  <div class="wherefore__link-text h7 bold">Воспалительные заболевания органов малого таза</div>
+                  <div class="wherefore__link-arr">
+                    <img src="./assets/images/arrWhite.svg" alt="">
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="wherefore__link">
+                  <div class="wherefore__link-text h7 bold">Послеоперационные спайки</div>
+                  <div class="wherefore__link-arr">
+                    <img src="./assets/images/arrWhite.svg" alt="">
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="wherefore__link">
+                  <div class="wherefore__link-text h7 bold">Хроническая тазовая боль</div>
+                  <div class="wherefore__link-arr">
+                    <img src="./assets/images/arrWhite.svg" alt="">
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="wherefore__item">
+          <div class="wherefore__img">
+            <img src="./assets/images/wherefore2.webp" alt="">
+          </div>
+          <div class="wherefore__info">
+            <p class="wherefore__subtitle txt32 white">Урология:</p>
+            <ul class="wherefore__list">
+              <li>
+                <a href="#" class="wherefore__link">
+                  <div class="wherefore__link-text h7 bold">Простатит</div>
+                  <div class="wherefore__link-arr">
+                    <img src="./assets/images/arrWhite.svg" alt="">
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="wherefore__link">
+                  <div class="wherefore__link-text h7 bold">Аденома простаты</div>
+                  <div class="wherefore__link-arr">
+                    <img src="./assets/images/arrWhite.svg" alt="">
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="wherefore__link">
+                  <div class="wherefore__link-text h7 bold">Хроническая тазовая боль</div>
+                  <div class="wherefore__link-arr">
+                    <img src="./assets/images/arrWhite.svg" alt="">
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="wherefore__link">
+                  <div class="wherefore__link-text h7 bold">Хирургия</div>
+                  <div class="wherefore__link-arr">
+                    <img src="./assets/images/arrWhite.svg" alt="">
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="mold section-wrap">
+  <div class="mold__container container">
+    <div class="mold__inner">
+      <p class="mold__title h1">
+        удобная и безопасная
+        <br>
+        <span class="pink">форма суппозитории</span>
+      </p>
+
+      <div class="mold__content">
+        <div class="mold__info">
+          <div class="mold__text-wrap">
+            <div class="mold__text-box">
+              <p class="mold__text-title txt24 bold upper">
+                Лонгидаза®&nbsp;выпускается в&nbsp;форме свечей, которые Не влияют на желудочно кишечный тракт и сердечно сосудистую систему
+                <sup>1</sup>
+              </p>
+              <p class="mold__text-desc txt24">
+                По сравнению с пероральными формами позволяет достичь более высокой локальной концентрации препарата в более
+                короткие сроки
+              </p>
+            </div>
+
+            <a href="#" class="mold__btn btn-primary" data-da=".mold__inner, 768, last"><span>пройти курс лонгидазы</span></a>
+          </div>
+          <div class="mold__download">
+            <div class="mold__download-img">
+              <img src="./assets/images/moldDownload.webp" alt="">
+            </div>
+            <div class="mold__download-content">
+              <p class="mold__download-title h5">
+                Удобный способ
+                <br>
+                приема - 1 раз в день
+              </p>
+              <a href="#" class="mold__download-link btn-border">
+                <span data-text="скачать инструкцию pdf">скачать инструкцию pdf</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="mold__img" data-da=".mold__download, 768, first">
+          <img src="./assets/images/moldDrag.webp" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="help section-wrap">
+  <div class="help__container container">
+    <div class="help__inner">
+      <div class="help__title-box white">
+        <p class="help__title h1">
+          Посмотрите как Лонгидаза®
+          <br>
+          помогает реальным пациентам:
+        </p>
+
+        <p class="help__subtitle txt24">Непридуманные истории</p>
+      </div>
+      <div class="help__content">
+        <div class="help__swiper-box">
+          <div class="help__swiper swiper">
+            <div class="help__swiper-wrapper swiper-wrapper">
+              <div class="help__slide swiper-slide">
+                <div class="history">
+                  <div class="history__content">
+                    <a href="!#" class="history__img" data-fancybox="" data-src="./assets/images/videoTest.mp4">
+                      <img src="./assets/images/history.webp" alt="">
+                    </a>
+
+                    <div class="history__title-box">
+                      <p class="txt24 upper bold">«Забыла о том, что меня мучали боли»</p>
+                      <p class="txt20">
+                        Узнайте, как Лонгидаза® помогла при эндометриозе забыть о мучительных болях — даже в критические дни.
+                        Узнайте, как Лонгидаза® помогла при эндометриозе забыть о мучительных болях — даже в критические дни.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="history__info">
+                    <p class="h5">
+                      ВРАЧ:
+                      <span class="pink">ХАДИЖА ДАНИЯЛОВА</span>
+                    </p>
+
+                    <p class="history__pos txt20">Врач акушер-гинеколог первой категории Клиника «Динамика», г. Москва</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="help__slide swiper-slide">
+                <div class="history">
+                  <div class="history__content">
+                    <a href="!#" class="history__img" data-fancybox="" data-src="./assets/images/videoTest.mp4">
+                      <img src="./assets/images/history.webp" alt="">
+                    </a>
+
+                    <div class="history__title-box">
+                      <p class="txt24 upper bold">«Забыла о том, что меня мучали боли»</p>
+                      <p class="txt20">
+                        Узнайте, как Лонгидаза® помогла при эндометриозе забыть о мучительных болях — даже в критические дни.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="history__info">
+                    <p class="h5">
+                      ВРАЧ:
+                      <span class="pink">ХАДИЖА ДАНИЯЛОВА</span>
+                    </p>
+
+                    <p class="history__pos txt20">Врач акушер-гинеколог первой категории Клиника «Динамика», г. Москва</p>
+                  </div>
+                </div>
+              </div>
+              <div class="help__slide swiper-slide">
+                <div class="history">
+                  <div class="history__content">
+                    <a href="!#" class="history__img" data-fancybox="" data-src="./assets/images/videoTest.mp4">
+                      <img src="./assets/images/history.webp" alt="">
+                    </a>
+
+                    <div class="history__title-box">
+                      <p class="txt24 upper bold">«Забыла о том, что меня мучали боли»</p>
+                      <p class="txt20">
+                        Узнайте, как Лонгидаза® помогла при эндометриозе забыть о мучительных болях — даже в критические дни.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="history__info">
+                    <p class="h5">
+                      ВРАЧ:
+                      <span class="pink">ХАДИЖА ДАНИЯЛОВА</span>
+                    </p>
+
+                    <p class="history__pos txt20">Врач акушер-гинеколог первой категории Клиника «Динамика», г. Москва</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="help__nav-box swiper-btn-box">
+            <button class="help__swiper-btn help__swiper-btn--next swiper-button swiper-button--prev">
+              <div class="swiper-button__svg-wrap">
+                <div class="swiper-button__svg">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.5417 16.6001L7.10835 11.1668C6.46669 10.5251 6.46669 9.47509 7.10835 8.83342L12.5417 3.40009" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+              </div>
+            </button>
+            <button class="help__swiper-btn help__swiper-btn--next swiper-button swiper-button--next">
+              <div class="swiper-button__svg-wrap">
+                <div class="swiper-button__svg">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.45828 3.39991L12.8916 8.83325C13.5333 9.47491 13.5333 10.5249 12.8916 11.1666L7.45828 16.5999" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <a href="#" class="help__btn btn-primary"><span>специалистам</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="faq section-wrap">
+  <div class="faq__container container">
+    <div class="faq__inner white">
+      <p class="h1 center">Вопросы и ответы по препарату Лонгидаза®</p>
+      <div class="faq__content">
+        <div class="faq__accordion">
+          <div class="faq__accordion-list">
+            <div class="faq__item acc">
+              <div class="acc__head">
+                <p class="acc__title txt24 upper bold">
+                  Почему применение суппозиториев препарата Лонгидаза® противопоказано детям до 12 лет?
+                </p>
+                <div class="acc__arr">
+                  <img src="./assets/images/arrAcc.svg" alt="">
+                </div>
+              </div>
+              <div class="acc__info">
+                <div class="acc__info-inner">
+                  <p class="txt18">
+                    Препарат Лонгидаза®&nbsp;оказывает потенциирующее действие, что означает усиление эффекта, на&nbsp;биологически активные
+                    вещества. В связи с&nbsp;чем лучше воздержаться от приема алкоголя на&nbsp;период терапии.
+                  </p>
+                  <div class="acc__author">
+                    <div class="acc__author-photo">
+                      <img src="./assets/images/author.webp" alt="">
+                    </div>
+                    <div class="acc__author-info">
+                      <p class="acc__author-name h5 white">Петрова Ирина Михайлова</p>
+                      <p class="acc__author-pos txt16 white">д.м.н., ведущий специалист в области урологии</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq__item acc">
+              <div class="acc__head">
+                <p class="acc__title txt24 upper bold">
+                  Мне назначили антибиотики одновременно с препаратом Лонгидаза®. Можно ли принимать их вместе или после
+                  прохождения курса лечения антибиотиками?
+                </p>
+                <div class="acc__arr">
+                  <img src="./assets/images/arrAcc.svg" alt="">
+                </div>
+              </div>
+              <div class="acc__info">
+                <div class="acc__info-inner">
+                  <p class="txt18">
+                    Препарат Лонгидаза®&nbsp;оказывает потенциирующее действие, что означает усиление эффекта, на&nbsp;биологически активные
+                    вещества. В связи с&nbsp;чем лучше воздержаться от приема алкоголя на&nbsp;период терапии.
+                  </p>
+                  <div class="acc__author">
+                    <div class="acc__author-photo">
+                      <img src="./assets/images/author.webp" alt="">
+                    </div>
+                    <div class="acc__author-info">
+                      <p class="acc__author-name h5 white">Петрова Ирина Михайлова</p>
+                      <p class="acc__author-pos txt16 white">д.м.н., ведущий специалист в области урологии</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="faq__item acc">
+              <div class="acc__head">
+                <p class="acc__title txt24 upper bold">
+                  Можно ли применять препарат Лонгидаза® при местных аллергических реакциях?
+                </p>
+                <div class="acc__arr">
+                  <img src="./assets/images/arrAcc.svg" alt="">
+                </div>
+              </div>
+              <div class="acc__info">
+                <div class="acc__info-inner">
+                  <p class="txt18">
+                    Препарат Лонгидаза®&nbsp;оказывает потенциирующее действие, что означает усиление эффекта, на&nbsp;биологически активные
+                    вещества. В связи с&nbsp;чем лучше воздержаться от приема алкоголя на&nbsp;период терапии.
+                  </p>
+                  <div class="acc__author">
+                    <div class="acc__author-photo">
+                      <img src="./assets/images/author.webp" alt="">
+                    </div>
+                    <div class="acc__author-info">
+                      <p class="acc__author-name h5 white">Петрова Ирина Михайлова</p>
+                      <p class="acc__author-pos txt16 white">д.м.н., ведущий специалист в области урологии</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="faq__accordion-list">
+            <div class="faq__item acc">
+              <div class="acc__head">
+                <p class="acc__title txt24 upper bold">
+                  Почему применение суппозиториев препарата Лонгидаза® противопоказано детям до 12 лет?
+                </p>
+                <div class="acc__arr">
+                  <img src="./assets/images/arrAcc.svg" alt="">
+                </div>
+              </div>
+              <div class="acc__info">
+                <div class="acc__info-inner">
+                  <p class="txt18">
+                    Препарат Лонгидаза®&nbsp;оказывает потенциирующее действие, что означает усиление эффекта, на&nbsp;биологически активные
+                    вещества. В связи с&nbsp;чем лучше воздержаться от приема алкоголя на&nbsp;период терапии.
+                  </p>
+                  <div class="acc__author">
+                    <div class="acc__author-photo">
+                      <img src="./assets/images/author.webp" alt="">
+                    </div>
+                    <div class="acc__author-info">
+                      <p class="acc__author-name h5 white">Петрова Ирина Михайлова</p>
+                      <p class="acc__author-pos txt16 white">д.м.н., ведущий специалист в области урологии</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="faq__item acc">
+              <div class="acc__head">
+                <p class="acc__title txt24 upper bold">Как узнать подлинность препарата Лонгидаза®?</p>
+                <div class="acc__arr">
+                  <img src="./assets/images/arrAcc.svg" alt="">
+                </div>
+              </div>
+              <div class="acc__info">
+                <div class="acc__info-inner">
+                  <p class="txt18">
+                    Препарат Лонгидаза®&nbsp;оказывает потенциирующее действие, что означает усиление эффекта, на&nbsp;биологически активные
+                    вещества. В связи с&nbsp;чем лучше воздержаться от приема алкоголя на&nbsp;период терапии.
+                  </p>
+                  <div class="acc__author">
+                    <div class="acc__author-photo">
+                      <img src="./assets/images/author.webp" alt="">
+                    </div>
+                    <div class="acc__author-info">
+                      <p class="acc__author-name h5 white">Петрова Ирина Михайлова</p>
+                      <p class="acc__author-pos txt16 white">д.м.н., ведущий специалист в области урологии</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="faq__btn btn-primary"><span>задать вопрос</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="order section-wrap">
+  <div class="order__container container">
+    <div class="order__inner">
+      <p class="h1 center">Заказать онлайн</p>
+      <div class="order__list-box">
+        <ul class="order__list">
+          <li>
+            <a href="#" class="order__link">
+              <img src="./assets/images/order1.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="order__link">
+              <img src="./assets/images/order2.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="order__link">
+              <img src="./assets/images/order3.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="order__link">
+              <img src="./assets/images/order4.svg" alt="">
+            </a>
+          </li>
+        </ul>
+        <button class="order__btn btn-primary"><span>Получить скидку</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="find section-wrap">
+  <div class="find__container container">
+    <div class="find__inner">
+      <p class="h1 center">Найти в ближайшей аптеке</p>
+
+      <div class="uteka-widget">
+        <!-- Шапка виджета -->
+        <div class="uteka-widget-header">
+          <div class="uteka-widget__container">
+            <div class="uteka-widget-header__inner">
+              <!-- Логотип -->
+              <a class="uteka-widget-header__logo" data-popup="#popup__attention">
+                <img src="https://widget.uteka.ru/static/img/widgets/logo-light.svg" alt="Заказать в Ютеке" title="поиск в аптеках">
+              </a>
+
+              <!-- Заголовок -->
+              <div class="uteka-widget-header__title"></div>
+            </div>
+          </div>
+        </div>
+
+        <iframe allow="geolocation"></iframe>
+
+        <div class="uteka-widget-footer">
+          <div class="uteka-widget__container">
+            <div class="uteka-widget-footer__inner">
+              <div class="uteka-widget-footer__img">
+                <img src="./assets/images/important.svg" alt="">
+              </div>
+              <p class="uteka-widget-footer__text">
+                В разделе «Где купить» представлена информация от третьих лиц.
+                <br>
+                ООО «НПО Петровакс Фарм» не несет ответственность за достоверность, ошибки и неточности, содержащиеся в этом
+                разделе.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer section-wrap">
+  <div class="footer__main white">
+    <div class="container">
+      <div class="footer__inner">
+        <ol class="footer__bibliography">
+          <li>Инструкция по медицинскому применению лекарственного препарата Лонгидаза® ЛП-№(009588)-(РГ-RU)-040425</li>
+          <li>
+            Авдошин В.П., Андрюхин М.И., Михайликов Т.Г. Магнитолазерная и антисклеротическая терапия в комплексном лечении
+            больных хроническим бактериальным простатитом // Лазерная медицина. 2008. Т. 12, вып. 3. С. 4–10.
+          </li>
+          <li>
+            Авдошин В.П., Михайликов Т.Г., Андрюхин М.И., Ольшанская Е.В., Пульбере С.А. Оценка эффективности лечения больных
+            хроническим простатитом препаратом Лонгидаза 3000 МЕ // Эффективная фармакотерапия. Урология. 2010. № 4. С. 30–34.
+          </li>
+          <li>Биоплёнки в&nbsp;эякуляте как причина нарушения фертильности. Hi+med.&nbsp;2024;5(85):20—24.</li>
+          <li>
+            Тризна Е.Ю. и&nbsp;др. Экспериментальная и&nbsp;клиническая фармакология.&nbsp;2020;83(2):38—44. DOI: 10.30906/0869-2092-2020-83-2-38
+          </li>
+        </ol>
+
+        <div class="footer__content">
+          <div class="footer__info">
+            <div class="footer__logo">
+              <img src="./assets/images/footerLogo.svg" alt="">
+            </div>
+            <button class="footer__btn btn-primary"><span>Для специалистов</span></button>
+            <div class="footer__links">
+              <a href="#" class="footer__link txt16">Обработка персональных данных</a>
+              <a href="#" class="footer__link txt16">Уведомление о cookie-файлах</a>
+            </div>
+          </div>
+          <nav class="footer__nav">
+            <div class="footer__nav-item">
+              <a href="#" class="footer__nav-link h7 bold">О препарате</a>
+              <a href="#" class="footer__nav-link h7 bold">Почему Лонгидаза?</a>
+              <a href="#" class="footer__nav-link h7 bold">Механизм действия</a>
+              <a href="#" class="footer__nav-link h7 bold">Вопрос-ответ</a>
+              <a href="#" class="footer__nav-link h7 bold">важно знать</a>
+              <a href="#" class="footer__nav-link h7 bold">Где купить?</a>
+            </div>
+
+            <div class="footer__nav-item">
+              <a href="#" class="footer__nav-link h7 bold">Области применения:</a>
+              <div class="footer__nav-item-list">
+                <a href="#" class="footer__nav-item-link txt18">Гинекология</a>
+                <a href="#" class="footer__nav-item-link txt18">Урология</a>
+                <a href="#" class="footer__nav-item-link txt18">Пульмонология</a>
+                <a href="#" class="footer__nav-item-link txt18">Дерматология</a>
+                <a href="#" class="footer__nav-item-link txt18">Ревматология</a>
+                <a href="#" class="footer__nav-item-link txt18">Спастичность</a>
+              </div>
+            </div>
+          </nav>
+          <div class="footer__social">
+            <div class="footer__social-info">
+              <div class="footer__social-logo">
+                <img src="./assets/images/petrovax.svg" alt="">
+              </div>
+              <div class="footer__social-adress txt16">
+                <p>
+                  ООО «НПО Петровакс Фарм» ©&nbsp;2025
+                  <br>
+                  Московская область, город Подольск,
+                  <br>
+                  село Покров, ул. Сосновая, д.&nbsp;1
+                </p>
+                <a href="tel:+7 (495) 730-75-45">Тел:&nbsp; +7 (495) 730-75-45</a>
+              </div>
+            </div>
+            <div class="footer__social-list">
+              <a href="#" class="footer__social-link circle-link ">
+                <div class="footer__social-svg-box circle-link__svg-box ">
+                  <div class="footer__social-svg circle-link__svg">
+                    <img src="./assets/images/vk.svg" alt="">
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="footer__social-link circle-link">
+                <div class="footer__social-svg-box circle-link__svg-box ">
+                  <div class="footer__social-svg circle-link__svg">
+                    <img src="./assets/images/youtube.svg" alt="">
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="footer__social-link circle-link">
+                <div class="footer__social-svg-box circle-link__svg-box ">
+                  <div class="footer__social-svg circle-link__svg">
+                    <img src="./assets/images/rutube.svg" alt="">
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="footer__social-link circle-link">
+                <div class="footer__social-svg-box circle-link__svg-box ">
+                  <div class="footer__social-svg circle-link__svg">
+                    <img src="./assets/images/dzen.svg" alt="">
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="footer__social-link circle-link">
+                <div class="footer__social-svg-box circle-link__svg-box ">
+                  <div class="footer__social-svg circle-link__svg">
+                    <img src="./assets/images/telegram.svg" alt="">
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__disclaimer-wrap">
+    <div class="container">
+      <picture class="footer__disclaimer">
+        <source srcset="./assets/images/disclaimerMob.svg" media="(max-width: 768px)">
+        <source srcset="./assets/images/disclaimer.svg" media="(min-width: 769px)">
+        <img src="./assets/images/disclaimer.svg" alt="">
+      </picture>
+    </div>
+  </div>
+</footer>
+
+<div class="fancybox-bg"></div>
+
+<script>
+  window.uteka = window.uteka || {};
+  ((window.uteka._host = 'widget.uteka.ru'), (window.uteka._queue = []));
+  window.uteka._loaded = false;
+  window.uteka.onReady = function (callback) {
+    if (window.uteka._loaded) {
+      return callback();
+    }
+
+    window.uteka._queue.push(callback);
+  };
+
+  var script = document.createElement('script');
+  script.src = 'https://cdn.uteka.ru/static/widgets/widget.compiled.js?l=' + Date.now();
+  script.async = true;
+  script.addEventListener('load', function () {
+    window.uteka._loaded = true;
+    window.uteka._queue.forEach(function (callback) {
+      callback();
+    });
+  });
+
+  document.head.appendChild(script);
+
+  window.uteka.onReady(function () {
+    var widget = document.querySelector('.uteka-widget');
+
+    if (widget) {
+      window.uteka.loadWidget(widget, {
+        productIds: ['183755', '183752', '183753']
+      });
+    } else {
+      console.log('Виджет Ютека не найден на этой странице');
+    }
+
+    // window.uteka.loadWidget(widget, {
+    //   productId: '183755'
+    // });
+  });
+</script>
+
+      <div class="fancybox-bg"></div>
+    </div>
+  </body>
+</html>
