@@ -1,0 +1,70 @@
+.application {
+  background: $light-gray;
+
+  // .application__container
+
+  &__container {
+  }
+
+  // .application__inner
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 866rem);
+    align-items: center;
+    gap: 20rem;
+    padding-top: 80rem;
+    padding-bottom: 120rem;
+    @include small-tablet {
+      display: flex;
+      padding-bottom: 60rem;
+       padding-top: 40rem;
+    }
+  }
+
+  // .application__img
+
+  &__img {
+    width: 866rem;
+    height: 733rem;
+    border-radius: 32rem;
+    overflow: hidden;
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  // .application__content
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 40rem;
+    @include small-tablet {
+      gap: 20rem;
+    }
+  }
+
+  // .application__form
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16rem;
+
+    & .form__label-box {
+      display: flex;
+      flex-direction: column;
+      gap: 20rem;
+      @include small-tablet {
+        gap: 16rem;
+      }
+    }
+
+    & .btn-primary {
+      @include desk-only {
+        width: 283rem;
+      }
+    }
+  }
+}

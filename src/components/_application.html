@@ -1,0 +1,97 @@
+<section class="application section-wrap">
+  <div class="application__container container">
+    <div class="application__inner">
+      <div class="application__img">
+        <img src="./assets/images/application.webp" alt="" />
+      </div>
+      <div class="application__content">
+        <p class="txt40 upper bold">Задать вопрос</p>
+        <form data-popup-message="#popup__success" class="application__form form" data-dev action="">
+          <div class="form__label-box">
+            <label class="form__label">
+              <span class="form__label-inner">
+                <input
+                  class="form__input input--name"
+                  type="text"
+                  data-validate
+                  data-required="name"
+                  autocomplete="off"
+                  name="form[]"
+                  placeholder="Введите ФИО"
+                />
+                <span class="form__placeholder txt12 light lh140">ФИО*</span>
+              </span>
+              <span class="form__error txt10 light">Некорректное значение</span>
+            </label>
+
+            <label class="form__label">
+              <span class="form__label-inner">
+                <input
+                  class="form__input input--tel phone-mask"
+                  type="text"
+                  data-validate
+                  data-required="tel"
+                  autocomplete="off"
+                  name="form[]"
+                  placeholder="+7 (___) ___-__-__"
+                />
+                <span class="form__placeholder txt12 light lh140">Номер телефона*</span>
+              </span>
+              <span class="form__error txt10 light">Некорректное значение</span>
+            </label>
+
+            <label class="form__label">
+              <span class="form__label-inner">
+                <input
+                  class="form__input input--mail"
+                  type="text"
+                  data-validate
+                  data-required="email"
+                  autocomplete="off"
+                  name="form[]"
+                  placeholder="Введите электронную почту"
+                />
+
+                <span class="form__placeholder txt12 light lh140">Электронная почта*</span>
+              </span>
+              <span class="form__error txt10 light">Некорректное значение</span>
+            </label>
+            <!-- data-validate
+                    data-required="" -->
+            <label class="form__label">
+              <span class="form__label-inner">
+                <span class="form__textarea-wrap">
+                  <textarea class="form__textarea" name="form[]" placeholder="Введите свой вопрос"></textarea>
+
+                  <span class="form__textarea-count">
+                    <span class="current"></span>
+                    <span>/</span>
+                    <span class="all">250</span>
+                  </span>
+                </span>
+                <span class="form__placeholder txt12 light lh140">Вопрос</span>
+              </span>
+              <span class="form__error txt10 light">Некорректное значение</span>
+            </label>
+          </div>
+
+          <div class="form__btn-box">
+            <label class="form__check-label">
+              <input class="form__check-input" type="checkbox" />
+              <span class="form__check-square"></span>
+              <span class="form__check-text">
+                Нажимая кнопку «Отправить», вы даете свое согласие на обработку персональных данных, в соответствии с Федеральным
+                законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в
+                <a href="#">Согласии на обработку персональных данных</a>
+              </span>
+            </label>
+
+            <button disabled type="submit" class="btn-primary submit-btn">
+              <span>Отправить</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

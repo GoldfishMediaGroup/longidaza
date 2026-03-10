@@ -1,630 +1,4 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://api-maps.yandex.ru/v3/?apikey=cb93da52-9741-4ffe-86ea-93a91ce99a1c&lang=ru_RU"></script>
-    <title>Главная</title>
-  <script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
-
-  <body>
-    <div class="wrapper">
-      <header class="header ">
-  <div class="header__container container">
-    <div class="header__inner">
-      <div class="header__nav nav">
-        <div class="nav__inner-wrapp">
-          <div class="nav__inner">
-            <a href="" class="nav__logo">
-              <img src="./assets/images/logoHeader.svg" alt="">
-            </a>
-            <div class="nav__info-wrap">
-              <div class="nav__billets billets">
-                <button class="billets__main" data-trigger="nav-modal-1">
-                  <span class="billets__main-text-box">
-                    <span class="billets__main-text txt18">Меню</span>
-                  </span>
-                  <span class="billets__main-arr">
-                    <img src="./assets/images/arrAccBlack.svg" alt="">
-                  </span>
-                </button>
-                <div class="billets__btns">
-                  <button class="billets__btn billets__btn--ginecologia" data-trigger="nav-modal-2">
-                    <span class="billets__btn-text-box">
-                      <span class="billets__btn-svg">
-                        <img src="./assets/images/womanSign.svg" alt="">
-                      </span>
-                      <span class="billets__btn-text txt18 white">Гинекология</span>
-                    </span>
-                    <span class="billets__btn-arr">
-                      <img src="./assets/images/arrAcc.svg" alt="">
-                    </span>
-                  </button>
-                  <button class="billets__btn billets__btn--urologia" data-trigger="nav-modal-3">
-                    <span class="billets__btn-text-box">
-                      <span class="billets__btn-svg">
-                        <img src="./assets/images/manSign.svg" alt="">
-                      </span>
-                      <span class="billets__btn-text txt18 white">Урология</span>
-                    </span>
-                    <span class="billets__btn-arr">
-                      <img src="./assets/images/arrAcc.svg" alt="">
-                    </span>
-                  </button>
-                </div>
-              </div>
-              <div class="nav__links links txt18">
-                <a class="links__link" href="#">
-                  <span class="links__text">Важно знать</span>
-                </a>
-                <a class="links__link" href="#">
-                  <span class="links__text">Вопрос-ответ</span>
-                </a>
-                <a class="links__link" href="#">
-                  <span class="links__img">
-                    <img src="./assets/images/bag.svg" alt="">
-                  </span>
-                  <span class="links__text">Где купить?</span>
-                </a>
-              </div>
-            </div>
-
-            <div class="header__circle-btn-box">
-              <div class="header__circle-btn header__burger burger">
-                <div class="header__circle-svg burger__svg burger__svg--close">
-                  <img src="./assets/images/burgerClose.svg" alt="">
-                </div>
-                <div class="header__circle-svg burger__svg burger__svg--open">
-                  <img src="./assets/images/burgerOpen.svg" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="header__search search" data-da=".header__circle-btn-box, 768, first">
-        <div class="search__head">
-          <div class="search__head-inner">
-            <div class="search__input-wrap">
-              <input type="text" class="search__input txt20" placeholder="Введите поисковой запрос">
-            </div>
-            <div class="search__btn-wrap">
-              <button class="search__btn search__open">
-                <div class="search__btn-svg">
-                  <img src="./assets/images/search.svg" alt="">
-                </div>
-              </button>
-              <button class="search__btn search__clear">
-                <div class="search__btn-svg">
-                  <img src="./assets/images/clear.svg" alt="">
-                </div>
-              </button>
-            </div>
-            <div class="search__close-btn">
-              <div class="search__close-btn-svg">
-                <img src="./assets/images/burgerOpen.svg" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="search__modal">
-          <div class="search__modal-inner">
-            <div class="search__modal-item search__before">
-              <div class="search__before-head flex cv sb">
-                <p class="h6">Недавно искали</p>
-                <button class="search__before-clear h7 bold">очистить</button>
-              </div>
-
-              <ul class="search__before-list">
-                <li class="search__before-item">
-                  <div class="search__before-item-info">
-                    <div class="search__before-item-svg">
-                      <img src="./assets/images/time.svg" alt="">
-                    </div>
-                    <a href="#" class="search__before-item-link txt20">Лонгидаза при эндометриозе</a>
-                  </div>
-                  <button class="search__before-item-remove">
-                    <img src="./assets/images/clear.svg" alt="">
-                  </button>
-                </li>
-                <li class="search__before-item">
-                  <div class="search__before-item-info">
-                    <div class="search__before-item-svg">
-                      <img src="./assets/images/time.svg" alt="">
-                    </div>
-                    <a href="#" class="search__before-item-link txt20">Лонгидаза при эндометриозе</a>
-                  </div>
-                  <button class="search__before-item-remove">
-                    <img src="./assets/images/clear.svg" alt="">
-                  </button>
-                </li>
-                <li class="search__before-item">
-                  <div class="search__before-item-info">
-                    <div class="search__before-item-svg">
-                      <img src="./assets/images/time.svg" alt="">
-                    </div>
-                    <a href="#" class="search__before-item-link txt20">Лонгидаза при эндометриозе</a>
-                  </div>
-                  <button class="search__before-item-remove">
-                    <img src="./assets/images/clear.svg" alt="">
-                  </button>
-                </li>
-              </ul>
-            </div>
-            <div class="search__modal-item search__full">
-              <div class="search__full-head flex cv sb">
-                <p class="h6">Результаты поиска</p>
-                <p class="search__full-count txt20">4 результата</p>
-              </div>
-              <ul class="search__full-list">
-                <li class="search__full-item">
-                  <a href="#" class="search__full-link">
-                    <div class="search__full-link-info">
-                      <p class="search__full-link-title txt24 bold"><span class="pink">Эндометриоз</span></p>
-                      <p class="search__full-link-cat h7 bold">гинекология</p>
-                    </div>
-                    <div class="search__full-link-arr">
-                      <div class="search__full-link-svg">
-                        <img src="./assets/images/arrRightBlack.svg" alt="">
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li class="search__full-item">
-                  <a href="#" class="search__full-link">
-                    <div class="search__full-link-info">
-                      <p class="search__full-link-title txt24 bold">
-                        Как возникает
-                        <span class="pink">эндометриоз</span>
-                        и как с ним бороться?
-                      </p>
-                      <p class="search__full-link-cat h7 bold">важно знать</p>
-                    </div>
-                    <div class="search__full-link-arr">
-                      <div class="search__full-link-svg">
-                        <img src="./assets/images/arrRightBlack.svg" alt="">
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li class="search__full-item">
-                  <a href="#" class="search__full-link">
-                    <div class="search__full-link-info">
-                      <p class="search__full-link-title txt24 bold">
-                        Как я поборола
-                        <span class="pink">эндометриоз</span>
-                      </p>
-                      <p class="search__full-link-cat h7 bold">важно знать</p>
-                    </div>
-                    <div class="search__full-link-arr">
-                      <div class="search__full-link-svg">
-                        <img src="./assets/images/arrRightBlack.svg" alt="">
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li class="search__full-item">
-                  <a href="#" class="search__full-link">
-                    <div class="search__full-link-info">
-                      <p class="search__full-link-cat h6 bold"><span class="pink">эндометриоз</span></p>
-                    </div>
-                    <div class="search__full-link-arr">
-                      <div class="search__full-link-svg">
-                        <img src="./assets/images/arrRightBlack.svg" alt="">
-                      </div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="search__modal-item search__empty">
-              <div class="search__empty-head flex cv sb">
-                <p class="h6">
-                  По вашему запросу ничего
-                  <br class="mobile">
-                  не найдено
-                </p>
-              </div>
-              <p class="search__empty-text txt20">
-                По вашему запросу «выовфдылват» ничего не найдено. Попробуйте изменить ваш запрос
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <button class="header__btn btn-primary"><span>для специалистов</span></button>
-
-      <div class="header__burger-modal burger-modal">
-        <div class="burger-modal__inner">
-          <div class="burger-modal__main burger-modal__menu">
-            <div class="burger-modal__main-inner">
-              <div class="burger-modal__list-box">
-                <p class="burger-modal__title txt24">Меню сайта</p>
-                <ul class="burger-modal__list">
-                  <li>
-                    <button class="burger-modal__link" data-burger-trigger="other">
-                      <span class="burger-modal__link-text txt18 upper">дРУГИЕ НАПРАВЛЕНИЯ</span>
-                      <span class="burger-modal__link-arr">
-                        <img src="./assets/images/arrRightBlack.svg" alt="">
-                      </span>
-                    </button>
-                  </li>
-                  <li>
-                    <a href="#" class="burger-modal__link">
-                      <span class="burger-modal__link-text txt18 upper">Инструкция</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="burger-modal__link">
-                      <span class="burger-modal__link-text txt18 upper">Механизм действия</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="burger-modal__link">
-                      <span class="burger-modal__link-text txt18 upper">Важно знать</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="burger-modal__link">
-                      <span class="burger-modal__link-text txt18 upper">Вопрос-ответ</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="burger-modal__link">
-                      <span class="burger-modal__link-text txt18 upper">Где купить?</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="burger-modal__list-box">
-                <p class="burger-modal__title txt24">Основные направления:</p>
-                <ul class="burger-modal__list-main">
-                  <li>
-                    <button class="burger-modal__list-btn" data-burger-trigger="gino">
-                      <div class="burger-modal__photo">
-                        <img src="./assets/images/ginoPhoto.webp" alt="">
-                      </div>
-                      <p class="burger-modal__name txt22 bold upper">Гинекология</p>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="burger-modal__list-btn" data-burger-trigger="uro">
-                      <div class="burger-modal__photo">
-                        <img src="./assets/images/uroPhoto.webp" alt="">
-                      </div>
-                      <p class="burger-modal__name txt22 bold upper">Урология</p>
-                    </button>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="burger-modal__aside burger-modal__menu" data-burger-aside="other">
-            <div class="burger-modal__aside-inner">
-              <div class="burger-modal__aside-content">
-                <button class="burger-modal__back" data-burger-back="">
-                  <div class="burger-modal__back-arr">
-                    <div class="burger-modal__back-svg">
-                      <img src="./assets/images/arrLeftBlack.svg" alt="">
-                    </div>
-                  </div>
-                  <p class="burger-modal__back-text txt24">Назад</p>
-                </button>
-                <div class="burger-modal__list-box">
-                  <p class="burger-modal__title txt24">Другие направления:</p>
-                  <ul class="burger-modal__list">
-                    <li>
-                      <a href="#" class="burger-modal__link">
-                        <span class="burger-modal__link-text txt18">Дерматология</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="burger-modal__link">
-                        <span class="burger-modal__link-text txt18">Косметология</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="burger-modal__link">
-                        <span class="burger-modal__link-text txt18">Хирургия</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="burger-modal__link">
-                        <span class="burger-modal__link-text txt18">Косметология</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="burger-modal__aside burger-modal__menu" data-burger-aside="gino">
-            <div class="burger-modal__aside-inner">
-              <div class="burger-modal__aside-content">
-                <button class="burger-modal__back" data-burger-back="">
-                  <div class="burger-modal__back-arr">
-                    <div class="burger-modal__back-svg">
-                      <img src="./assets/images/arrLeftBlack.svg" alt="">
-                    </div>
-                  </div>
-                  <p class="burger-modal__back-text txt24">Назад</p>
-                </button>
-                <div class="burger-modal__list-box">
-                  <p class="burger-modal__title txt24">Гинекология</p>
-                  <ul class="burger-modal__list">
-                    <li>
-                      <a href="#" class="burger-modal__link">
-                        <span class="burger-modal__link-text txt18 upper">Эндометриоз</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="burger-modal__link">
-                        <span class="burger-modal__link-text txt18 upper">Воспалительные заболевания органов малого таза</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="burger-modal__link">
-                        <span class="burger-modal__link-text txt18 upper">Послеоперационные спайки</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="burger-modal__link">
-                        <span class="burger-modal__link-text txt18 upper">Хроническая тазовая боль</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <a href="#" class="burger-modal__btn btn-primary"><span>Перейти в раздел гинекология</span></a>
-            </div>
-          </div>
-          <div class="burger-modal__aside burger-modal__menu" data-burger-aside="uro">
-            <div class="burger-modal__aside-inner">
-              <div class="burger-modal__aside-content">
-                <button class="burger-modal__back" data-burger-back="">
-                  <div class="burger-modal__back-arr">
-                    <div class="burger-modal__back-svg">
-                      <img src="./assets/images/arrLeftBlack.svg" alt="">
-                    </div>
-                  </div>
-                  <p class="burger-modal__back-text txt24">Назад</p>
-                </button>
-                <div class="burger-modal__list-box">
-                  <p class="burger-modal__title txt24">Урология</p>
-                  <ul class="burger-modal__list">
-                    <li>
-                      <a href="#" class="burger-modal__link">
-                        <span class="burger-modal__link-text txt18 upper">Простатит</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="burger-modal__link">
-                        <span class="burger-modal__link-text txt18 upper">Аденома простаты</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="burger-modal__link">
-                        <span class="burger-modal__link-text txt18 upper">Хроническая тазовая боль</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="burger-modal__link">
-                        <span class="burger-modal__link-text txt18 upper">Хирургия</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <a href="#" class="burger-modal__btn btn-primary btn-primary--blue"><span>Перейти в раздел урология</span></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="header__menu-modal menu-modal" data-modal="nav-modal-1">
-        <div class="menu-modal__inner">
-          <div class="menu-modal__list-wrap">
-            <p class="menu-modal__list-title txt20">Меню сайта:</p>
-            <div class="menu-modal__list-box">
-              <ul class="menu-modal__list">
-                <li>
-                  <p class="menu-modal__link" data-tab="tab1">
-                    <span class="menu-modal__link-text txt18 upper">дРУГИЕ НАПРАВЛЕНИЯ</span>
-                    <span class="menu-modal__link-arr">
-                      <img src="./assets/images/arrRightBlack.svg" alt="">
-                    </span>
-                  </p>
-                </li>
-                <li>
-                  <a href="#" class="menu-modal__link">
-                    <span class="menu-modal__link-text txt18 upper">Инструкция</span>
-                    <span class="menu-modal__link-arr">
-                      <img src="./assets/images/arrRightBlack.svg" alt="">
-                    </span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="menu-modal__link">
-                    <span class="menu-modal__link-text txt18 upper">Механизм действия</span>
-                    <span class="menu-modal__link-arr">
-                      <img src="./assets/images/arrRightBlack.svg" alt="">
-                    </span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="menu-modal__link">
-                    <span class="menu-modal__link-text txt18 upper">Важно знать</span>
-                    <span class="menu-modal__link-arr">
-                      <img src="./assets/images/arrRightBlack.svg" alt="">
-                    </span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="menu-modal__link">
-                    <span class="menu-modal__link-text txt18 upper">Вопрос-ответ</span>
-                    <span class="menu-modal__link-arr">
-                      <img src="./assets/images/arrRightBlack.svg" alt="">
-                    </span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="menu-modal__link">
-                    <span class="menu-modal__link-text txt18 upper">Где купить?</span>
-                    <span class="menu-modal__link-arr">
-                      <img src="./assets/images/arrRightBlack.svg" alt="">
-                    </span>
-                  </a>
-                </li>
-              </ul>
-              <button class="menu-modal__btn btn-border">
-                <span data-text="Вернуться на главную">Вернуться на главную</span>
-              </button>
-            </div>
-          </div>
-          <div class="menu-modal__content-wrap">
-            <div class="menu-modal__content-item content-main">
-              <p class="txt20">Основные направления:</p>
-              <div class="content-main__list">
-                <a href="#" class="content-main__link">
-                  <div class="content-main__photo">
-                    <img src="./assets/images/ginoPhoto.webp" alt="">
-                  </div>
-                  <p class="content-main__name txt22 bold upper">Гинекология</p>
-                </a>
-
-                <a href="#" class="content-main__link">
-                  <div class="content-main__photo">
-                    <img src="./assets/images/uroPhoto.webp" alt="">
-                  </div>
-                  <p class="content-main__name txt22 bold upper">Урология</p>
-                </a>
-              </div>
-            </div>
-            <div class="menu-modal__content-item content-other" data-content="tab1">
-              <div class="content-other__list-box">
-                <p class="txt20">Другие направления:</p>
-
-                <ul class="content-other__list">
-                  <li>
-                    <a href="#" class="content-other__link">
-                      <span class="content-other__link-text txt18">Дерматология</span>
-                      <span class="content-other__link-arr">
-                        <img src="./assets/images/arrRightBlack.svg" alt="">
-                      </span>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#" class="content-other__link">
-                      <span class="content-other__link-text txt18">Косметология</span>
-                      <span class="content-other__link-arr">
-                        <img src="./assets/images/arrRightBlack.svg" alt="">
-                      </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="content-other__link">
-                      <span class="content-other__link-text txt18">Хирургия</span>
-                      <span class="content-other__link-arr">
-                        <img src="./assets/images/arrRightBlack.svg" alt="">
-                      </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="content-other__link">
-                      <span class="content-other__link-text txt18">Пульманология</span>
-                      <span class="content-other__link-arr">
-                        <img src="./assets/images/arrRightBlack.svg" alt="">
-                      </span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="content-other__img">
-                <img src="./assets/images/headerOtherImg.webp" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="billets__btn-modal" data-modal="nav-modal-2">
-        <div class="billets__modal-list">
-          <a href="#" class="billets__modal-link">
-            <span class="billets__link-text h7">эндометриоз</span>
-            <span class="billets__link-arr">
-              <img src="./assets/images/arrRightBlack.svg" alt="">
-            </span>
-          </a>
-          <a href="#" class="billets__modal-link">
-            <span class="billets__link-text h7">Воспалительные заболевания органов малого таза</span>
-            <span class="billets__link-arr">
-              <img src="./assets/images/arrRightBlack.svg" alt="">
-            </span>
-          </a>
-          <a href="#" class="billets__modal-link">
-            <span class="billets__link-text h7">Послеоперационные спайки</span>
-            <span class="billets__link-arr">
-              <img src="./assets/images/arrRightBlack.svg" alt="">
-            </span>
-          </a>
-          <a href="#" class="billets__modal-link">
-            <span class="billets__link-text h7">Хроническая тазовая боль</span>
-            <span class="billets__link-arr">
-              <img src="./assets/images/arrRightBlack.svg" alt="">
-            </span>
-          </a>
-        </div>
-      </div>
-      <div class="billets__btn-modal" data-modal="nav-modal-3">
-        <div class="billets__modal-list">
-          <a href="#" class="billets__modal-link">
-            <span class="billets__link-text h7">Простатит</span>
-            <span class="billets__link-arr">
-              <img src="./assets/images/arrRightBlack.svg" alt="">
-            </span>
-          </a>
-          <a href="#" class="billets__modal-link">
-            <span class="billets__link-text h7">Аденома простаты</span>
-            <span class="billets__link-arr">
-              <img src="./assets/images/arrRightBlack.svg" alt="">
-            </span>
-          </a>
-          <a href="#" class="billets__modal-link">
-            <span class="billets__link-text h7">Хроническая тазовая боль</span>
-            <span class="billets__link-arr">
-              <img src="./assets/images/arrRightBlack.svg" alt="">
-            </span>
-          </a>
-          <a href="#" class="billets__modal-link">
-            <span class="billets__link-text h7">Хирургия</span>
-            <span class="billets__link-arr">
-              <img src="./assets/images/arrRightBlack.svg" alt="">
-            </span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <a href="#" class="where-arr">
-  <div class="where-arr__arr">
-    <div class="where-arr__arr-svg">
-      <img src="./assets/images/arrLeftBlack.svg" alt="">
-    </div>
-  </div>
-  <div class="where-arr__content">
-    <div class="where-arr__btn">
-      <p class="txt18 white">где купить</p>
-    </div>
-  </div>
-</a>
-
-      <main>
-        <section class="tabs">
+<section class="tabs">
   <div class="container">
     <div class="tabs__head">
       <nav class="breadcrumbs">
@@ -682,7 +56,7 @@
               <button class="tabs__link" data-link="5">Внутриматочные синехии 5</button>
             </li>
             <li>
-              <button class="tabs__link" data-link="6">После оперативных вмешательств на&nbsp;органах малого таза 6</button>
+              <button class="tabs__link" data-link="6">После оперативных вмешательств на органах малого таза 6</button>
             </li>
           </ul>
         </div>
@@ -730,7 +104,14 @@
                   <p class="faq-acc__title h6 bold">Как действует Лонгидаза?</p>
                   <div class="faq-acc__arr">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8" stroke="black" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path
+                        d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8"
+                        stroke="black"
+                        stroke-width="2.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
                     </svg>
                   </div>
                 </div>
@@ -774,7 +155,14 @@
                   <p class="faq-acc__title h6 bold">Как Лонгидаза помогает при эндометриозе?</p>
                   <div class="faq-acc__arr">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8" stroke="black" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path
+                        d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8"
+                        stroke="black"
+                        stroke-width="2.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
                     </svg>
                   </div>
                 </div>
@@ -818,7 +206,14 @@
                   <p class="faq-acc__title h6 bold">При каких заболеваниях применяется Лонгидаза?</p>
                   <div class="faq-acc__arr">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8" stroke="black" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path
+                        d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8"
+                        stroke="black"
+                        stroke-width="2.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
                     </svg>
                   </div>
                 </div>
@@ -862,7 +257,14 @@
                   <p class="faq-acc__title h6 bold">Можно ли применять Лонгидазу при хроническом простатите?</p>
                   <div class="faq-acc__arr">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8" stroke="black" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path
+                        d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8"
+                        stroke="black"
+                        stroke-width="2.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
                     </svg>
                   </div>
                 </div>
@@ -906,7 +308,14 @@
                   <p class="faq-acc__title h6 bold">В какой форме выпускается Лонгидаза и как её применять?</p>
                   <div class="faq-acc__arr">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8" stroke="black" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path
+                        d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8"
+                        stroke="black"
+                        stroke-width="2.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
                     </svg>
                   </div>
                 </div>
@@ -954,7 +363,14 @@
                   <p class="faq-acc__title h6 bold">Как действует Лонгидаза?2</p>
                   <div class="faq-acc__arr">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8" stroke="black" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path
+                        d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8"
+                        stroke="black"
+                        stroke-width="2.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
                     </svg>
                   </div>
                 </div>
@@ -1002,7 +418,14 @@
                   <p class="faq-acc__title h6 bold">Как действует Лонгидаза?3</p>
                   <div class="faq-acc__arr">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8" stroke="black" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path
+                        d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8"
+                        stroke="black"
+                        stroke-width="2.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
                     </svg>
                   </div>
                 </div>
@@ -1050,7 +473,14 @@
                   <p class="faq-acc__title h6 bold">Как действует Лонгидаза?4</p>
                   <div class="faq-acc__arr">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8" stroke="black" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path
+                        d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8"
+                        stroke="black"
+                        stroke-width="2.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
                     </svg>
                   </div>
                 </div>
@@ -1095,7 +525,14 @@
                   <p class="faq-acc__title h6 bold">Как действует Лонгидаза?1</p>
                   <div class="faq-acc__arr">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8" stroke="black" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path
+                        d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8"
+                        stroke="black"
+                        stroke-width="2.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
                     </svg>
                   </div>
                 </div>
@@ -1143,7 +580,14 @@
                   <p class="faq-acc__title h6 bold">Как действует Лонгидаза?5</p>
                   <div class="faq-acc__arr">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8" stroke="black" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path
+                        d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8"
+                        stroke="black"
+                        stroke-width="2.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
                     </svg>
                   </div>
                 </div>
@@ -1191,7 +635,14 @@
                   <p class="faq-acc__title h6 bold">Как действует Лонгидаза?6</p>
                   <div class="faq-acc__arr">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8" stroke="black" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path
+                        d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8"
+                        stroke="black"
+                        stroke-width="2.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
                     </svg>
                   </div>
                 </div>
@@ -1239,7 +690,14 @@
                   <p class="faq-acc__title h6 bold">Как действует Лонгидаза?7</p>
                   <div class="faq-acc__arr">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8" stroke="black" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path
+                        d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8"
+                        stroke="black"
+                        stroke-width="2.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
                     </svg>
                   </div>
                 </div>
@@ -1287,7 +745,14 @@
                   <p class="faq-acc__title h6 bold">Как действует Лонгидаза?8</p>
                   <div class="faq-acc__arr">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8" stroke="black" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path
+                        d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8"
+                        stroke="black"
+                        stroke-width="2.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
                     </svg>
                   </div>
                 </div>
@@ -1332,7 +797,14 @@
                   <p class="faq-acc__title h6 bold">Как действует Лонгидаза?</p>
                   <div class="faq-acc__arr">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8" stroke="black" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path
+                        d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8"
+                        stroke="black"
+                        stroke-width="2.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
                     </svg>
                   </div>
                 </div>
@@ -1380,7 +852,14 @@
                   <p class="faq-acc__title h6 bold">Как действует Лонгидаза?9</p>
                   <div class="faq-acc__arr">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8" stroke="black" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path
+                        d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8"
+                        stroke="black"
+                        stroke-width="2.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
                     </svg>
                   </div>
                 </div>
@@ -1428,7 +907,14 @@
                   <p class="faq-acc__title h6 bold">Как действует Лонгидаза?10</p>
                   <div class="faq-acc__arr">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8" stroke="black" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path
+                        d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8"
+                        stroke="black"
+                        stroke-width="2.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
                     </svg>
                   </div>
                 </div>
@@ -1476,7 +962,14 @@
                   <p class="faq-acc__title h6 bold">Как действует Лонгидаза?11</p>
                   <div class="faq-acc__arr">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8" stroke="black" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path
+                        d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8"
+                        stroke="black"
+                        stroke-width="2.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
                     </svg>
                   </div>
                 </div>
@@ -1521,7 +1014,14 @@
                   <p class="faq-acc__title h6 bold">Как действует Лонгидаза?1</p>
                   <div class="faq-acc__arr">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8" stroke="black" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path
+                        d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8"
+                        stroke="black"
+                        stroke-width="2.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
                     </svg>
                   </div>
                 </div>
@@ -1569,7 +1069,14 @@
                   <p class="faq-acc__title h6 bold">Как действует Лонгидаза?12</p>
                   <div class="faq-acc__arr">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8" stroke="black" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path
+                        d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8"
+                        stroke="black"
+                        stroke-width="2.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
                     </svg>
                   </div>
                 </div>
@@ -1614,7 +1121,14 @@
                   <p class="faq-acc__title h6 bold">Как действует Лонгидаза?1</p>
                   <div class="faq-acc__arr">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8" stroke="black" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path
+                        d="M21 8L13.5909 16.2677C12.7159 17.2441 11.2841 17.2441 10.4091 16.2677L3 8"
+                        stroke="black"
+                        stroke-width="2.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
                     </svg>
                   </div>
                 </div>
@@ -1660,275 +1174,3 @@
     </div>
   </div>
 </section>
-
-        <section class="application section-wrap">
-  <div class="application__container container">
-    <div class="application__inner">
-      <div class="application__img">
-        <img src="./assets/images/application.webp" alt="">
-      </div>
-      <div class="application__content">
-        <p class="txt40 upper bold">Задать вопрос</p>
-        <form data-popup-message="#popup__success" class="application__form form" data-dev="" action="">
-          <div class="form__label-box">
-            <label class="form__label">
-              <span class="form__label-inner">
-                <input class="form__input input--name" type="text" data-validate="" data-required="name" autocomplete="off" name="form[]" placeholder="Введите ФИО">
-                <span class="form__placeholder txt12 light lh140">ФИО*</span>
-              </span>
-              <span class="form__error txt10 light">Некорректное значение</span>
-            </label>
-
-            <label class="form__label">
-              <span class="form__label-inner">
-                <input class="form__input input--tel phone-mask" type="text" data-validate="" data-required="tel" autocomplete="off" name="form[]" placeholder="+7 (___) ___-__-__">
-                <span class="form__placeholder txt12 light lh140">Номер телефона*</span>
-              </span>
-              <span class="form__error txt10 light">Некорректное значение</span>
-            </label>
-
-            <label class="form__label">
-              <span class="form__label-inner">
-                <input class="form__input input--mail" type="text" data-validate="" data-required="email" autocomplete="off" name="form[]" placeholder="Введите электронную почту">
-
-                <span class="form__placeholder txt12 light lh140">Электронная почта*</span>
-              </span>
-              <span class="form__error txt10 light">Некорректное значение</span>
-            </label>
-            <!-- data-validate
-                    data-required="" -->
-            <label class="form__label">
-              <span class="form__label-inner">
-                <span class="form__textarea-wrap">
-                  <textarea class="form__textarea" name="form[]" placeholder="Введите свой вопрос"></textarea>
-
-                  <span class="form__textarea-count">
-                    <span class="current"></span>
-                    <span>/</span>
-                    <span class="all">250</span>
-                  </span>
-                </span>
-                <span class="form__placeholder txt12 light lh140">Вопрос</span>
-              </span>
-              <span class="form__error txt10 light">Некорректное значение</span>
-            </label>
-          </div>
-
-          <div class="form__btn-box">
-            <label class="form__check-label">
-              <input class="form__check-input" type="checkbox">
-              <span class="form__check-square"></span>
-              <span class="form__check-text">
-                Нажимая кнопку «Отправить», вы даете свое согласие на обработку персональных данных, в соответствии с Федеральным
-                законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в
-                <a href="#">Согласии на обработку персональных данных</a>
-              </span>
-            </label>
-
-            <button disabled="" type="submit" class="btn-primary submit-btn">
-              <span>Отправить</span>
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-      </main>
-      <footer class="footer section-wrap">
-  <div class="footer__main white">
-    <div class="container">
-      <div class="footer__inner">
-        <ol class="footer__bibliography">
-          <li>Инструкция по медицинскому применению лекарственного препарата Лонгидаза® ЛП-№(009588)-(РГ-RU)-040425</li>
-          <li>
-            Авдошин В.П., Андрюхин М.И., Михайликов Т.Г. Магнитолазерная и антисклеротическая терапия в комплексном лечении
-            больных хроническим бактериальным простатитом // Лазерная медицина. 2008. Т. 12, вып. 3. С. 4–10.
-          </li>
-          <li>
-            Авдошин В.П., Михайликов Т.Г., Андрюхин М.И., Ольшанская Е.В., Пульбере С.А. Оценка эффективности лечения больных
-            хроническим простатитом препаратом Лонгидаза 3000 МЕ // Эффективная фармакотерапия. Урология. 2010. № 4. С. 30–34.
-          </li>
-          <li>Биоплёнки в&nbsp;эякуляте как причина нарушения фертильности. Hi+med.&nbsp;2024;5(85):20—24.</li>
-          <li>
-            Тризна Е.Ю. и&nbsp;др. Экспериментальная и&nbsp;клиническая фармакология.&nbsp;2020;83(2):38—44. DOI: 10.30906/0869-2092-2020-83-2-38
-          </li>
-        </ol>
-
-        <div class="footer__content">
-          <div class="footer__info">
-            <div class="footer__logo">
-              <img src="./assets/images/footerLogo.svg" alt="">
-            </div>
-            <button class="footer__btn btn-primary"><span>Для специалистов</span></button>
-            <div class="footer__links">
-              <a href="#" class="footer__link txt16">Обработка персональных данных</a>
-              <a href="#" class="footer__link txt16">Уведомление о cookie-файлах</a>
-            </div>
-          </div>
-          <nav class="footer__nav">
-            <div class="footer__nav-item">
-              <a href="#" class="footer__nav-link h7 bold">О препарате</a>
-              <a href="#" class="footer__nav-link h7 bold">Почему Лонгидаза?</a>
-              <a href="#" class="footer__nav-link h7 bold">Механизм действия</a>
-              <a href="#" class="footer__nav-link h7 bold">Вопрос-ответ</a>
-              <a href="#" class="footer__nav-link h7 bold">важно знать</a>
-              <a href="#" class="footer__nav-link h7 bold">Где купить?</a>
-            </div>
-
-            <div class="footer__nav-item">
-              <a href="#" class="footer__nav-link h7 bold">Области применения:</a>
-              <div class="footer__nav-item-list">
-                <a href="#" class="footer__nav-item-link txt18">Гинекология</a>
-                <a href="#" class="footer__nav-item-link txt18">Урология</a>
-                <a href="#" class="footer__nav-item-link txt18">Пульмонология</a>
-                <a href="#" class="footer__nav-item-link txt18">Дерматология</a>
-                <a href="#" class="footer__nav-item-link txt18">Ревматология</a>
-                <a href="#" class="footer__nav-item-link txt18">Спастичность</a>
-              </div>
-            </div>
-          </nav>
-          <div class="footer__social">
-            <div class="footer__social-info">
-              <div class="footer__social-logo">
-                <img src="./assets/images/petrovax.svg" alt="">
-              </div>
-              <div class="footer__social-adress txt16">
-                <p>
-                  ООО «НПО Петровакс Фарм» ©&nbsp;2025
-                  <br>
-                  Московская область, город Подольск,
-                  <br>
-                  село Покров, ул. Сосновая, д.&nbsp;1
-                </p>
-                <a href="tel:+7 (495) 730-75-45">Тел:&nbsp; +7 (495) 730-75-45</a>
-              </div>
-            </div>
-            <div class="footer__social-list">
-              <a href="#" class="footer__social-link circle-link ">
-                <div class="footer__social-svg-box circle-link__svg-box ">
-                  <div class="footer__social-svg circle-link__svg">
-                    <img src="./assets/images/vk.svg" alt="">
-                  </div>
-                </div>
-              </a>
-              <a href="#" class="footer__social-link circle-link">
-                <div class="footer__social-svg-box circle-link__svg-box ">
-                  <div class="footer__social-svg circle-link__svg">
-                    <img src="./assets/images/youtube.svg" alt="">
-                  </div>
-                </div>
-              </a>
-              <a href="#" class="footer__social-link circle-link">
-                <div class="footer__social-svg-box circle-link__svg-box ">
-                  <div class="footer__social-svg circle-link__svg">
-                    <img src="./assets/images/rutube.svg" alt="">
-                  </div>
-                </div>
-              </a>
-              <a href="#" class="footer__social-link circle-link">
-                <div class="footer__social-svg-box circle-link__svg-box ">
-                  <div class="footer__social-svg circle-link__svg">
-                    <img src="./assets/images/dzen.svg" alt="">
-                  </div>
-                </div>
-              </a>
-              <a href="#" class="footer__social-link circle-link">
-                <div class="footer__social-svg-box circle-link__svg-box ">
-                  <div class="footer__social-svg circle-link__svg">
-                    <img src="./assets/images/telegram.svg" alt="">
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="footer__disclaimer-wrap">
-    <div class="container">
-      <picture class="footer__disclaimer">
-        <source srcset="./assets/images/disclaimerMob.svg" media="(max-width: 768px)">
-        <source srcset="./assets/images/disclaimer.svg" media="(min-width: 769px)">
-        <img src="./assets/images/disclaimer.svg" alt="">
-      </picture>
-    </div>
-  </div>
-</footer>
-
-<div class="fancybox-bg"></div>
-
-<script>
-  window.uteka = window.uteka || {};
-  ((window.uteka._host = 'widget.uteka.ru'), (window.uteka._queue = []));
-  window.uteka._loaded = false;
-  window.uteka.onReady = function (callback) {
-    if (window.uteka._loaded) {
-      return callback();
-    }
-
-    window.uteka._queue.push(callback);
-  };
-
-  var script = document.createElement('script');
-  script.src = 'https://cdn.uteka.ru/static/widgets/widget.compiled.js?l=' + Date.now();
-  script.async = true;
-  script.addEventListener('load', function () {
-    window.uteka._loaded = true;
-    window.uteka._queue.forEach(function (callback) {
-      callback();
-    });
-  });
-
-  document.head.appendChild(script);
-
-  window.uteka.onReady(function () {
-    var widget = document.querySelector('.uteka-widget');
-
-    if (widget) {
-      window.uteka.loadWidget(widget, {
-        productIds: ['183755', '183752', '183753']
-      });
-    } else {
-      console.log('Виджет Ютека не найден на этой странице');
-    }
-
-    // window.uteka.loadWidget(widget, {
-    //   productId: '183755'
-    // });
-  });
-</script>
-
-        <div id="popup__success" aria-hidden="true" class="popup popup--success" data-lenis-prevent="true">
-  <div class="popup__wrapper">
-    <div class="popup__content">
-      <div class="popup__body flex dc cv">
-        <button data-close="" type="button" class="popup__close-btn">
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M25.4287 5.99988L7 24.4286" stroke="#000001" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M7 5.99988L25.4287 24.4286" stroke="#000001" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-          </svg>
-        </button>
-        <div class="popup__body-content flex dc cv">
-          <div class="popup__main flex dc">
-            <p class="txt32 upper bold center">ваше обращение успешно отправлено!</p>
-
-            <p class="popup__subtitle txt20 grey center">
-              Ваш вопрос был успешно отправлен, мы постараемся ответить на него в&nbsp;течение 2‑3&nbsp;дней.
-            </p>
-          </div>
-          <button class="popup__btn btn-primary" data-close="">
-            <span>понятно</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-      <div class="fancybox-bg"></div>
-    </div>
-  </body>
-</html>

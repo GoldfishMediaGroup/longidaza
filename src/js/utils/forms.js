@@ -160,6 +160,7 @@ export let formValidate = {
   addError(formRequiredItem) {
     formRequiredItem.classList.add('_form-error');
     formRequiredItem.parentElement.classList.add('_form-error');
+    formRequiredItem.parentElement.parentElement.classList.add('_form-error');
     const error = formRequiredItem.parentElement.parentElement.querySelector('.error-span');
     if (error) {
       error.classList.add('active');
@@ -176,6 +177,7 @@ export let formValidate = {
   removeError(formRequiredItem) {
     formRequiredItem.classList.remove('_form-error');
     formRequiredItem.parentElement.classList.remove('_form-error');
+    formRequiredItem.parentElement.parentElement.classList.remove('_form-error');
     const error = formRequiredItem.parentElement.parentElement.querySelector('.error-span');
     if (error) {
       error.classList.remove('active');

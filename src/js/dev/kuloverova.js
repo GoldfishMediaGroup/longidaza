@@ -1,16 +1,18 @@
 import { gsap, ScrollTrigger } from 'gsap/all';
 window.$ = window.jQuery = require('jquery');
 
-// import popup from '../utils/popup';
-// import form from '../utils/form';
+import popup from '../utils/popup';
+import form from '../utils/form';
 import fancybox from '../utils/fancybox';
 import scroll from '../utils/scroll';
 
-import '../libs/dynamic_adapt';
 import header from '../components/header';
 import hero from '../components/hero';
 import help from '../components/help';
 import faq from '../components/faq';
+import tabs from '../components/tabs';
+
+import '../libs/dynamic_adapt';
 
 export const modules = {};
 
@@ -25,10 +27,15 @@ window.addEventListener('resize', () => {
 document.addEventListener('DOMContentLoaded', () => {
   gsap.registerPlugin(ScrollTrigger);
 
+  popup();
+  form();
   scroll();
+
   fancybox();
+
   header();
   hero();
   help();
   faq();
+  tabs();
 });

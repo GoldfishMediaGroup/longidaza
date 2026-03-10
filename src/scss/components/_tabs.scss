@@ -1,0 +1,371 @@
+.tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 40rem;
+  margin-top: 24rem;
+  @include small-tablet {
+    gap: 20rem;
+  }
+  // .tabs__head
+
+  &__head {
+    display: flex;
+    flex-direction: column;
+    gap: 40rem;
+    @include small-tablet {
+      gap: 20rem;
+    }
+  }
+
+  // .tabs__title
+
+  &__title {
+  }
+
+  // .tabs__tabs-wrap
+
+  &__tabs-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 28rem;
+    @include small-tablet {
+      gap: 16rem;
+    }
+  }
+
+  // .tabs__triggers
+
+  &__triggers {
+    @include small-tablet {
+      margin: 0 -12rem;
+      padding: 0 12rem;
+      width: 375rem;
+      overflow: auto;
+      &::-webkit-scrollbar,
+      &::-webkit-scrollbar-thumb,
+      &::-webkit-scrollbar-track {
+        display: none;
+      }
+    }
+  }
+
+  // .tabs__trigger-list
+
+  &__trigger-list {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 16rem;
+    @include desk-only {
+      flex-wrap: wrap;
+    }
+    @include small-tablet {
+      gap: 8rem;
+    }
+  }
+
+  // .tabs__trigger
+
+  &__trigger {
+  }
+
+  // .tabs__lists
+
+  &__lists {
+    display: grid;
+    position: relative;
+  }
+
+  // .tabs__list-item
+
+  &__list-item {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition:
+      opacity 0.3s,
+      visibility 0.3s;
+    &.isActive {
+      opacity: 1;
+      visibility: visible;
+      position: relative;
+      pointer-events: fill;
+    }
+  }
+
+  // .tabs__list
+
+  &__list {
+    display: flex;
+    gap: 20rem 40rem;
+    flex-wrap: wrap;
+    @include small-tablet {
+      gap: 16rem 20rem;
+    }
+  }
+
+  // .tabs__link
+
+  &__link {
+    white-space: nowrap;
+    transition:
+      color 0.3s,
+      border-bottom 0.3s;
+    position: relative;
+    padding-bottom: 4rem;
+    @include small-tablet {
+      padding-bottom: 2rem;
+    }
+    &::before {
+      position: absolute;
+      bottom: 0;
+      content: '';
+      width: 0;
+      transition: width 0.3s;
+      height: 1.5rem;
+      background: $pink-ginekologiya;
+      @include small-tablet {
+        height: 1rem;
+      }
+    }
+    &.isActive {
+      color: $pink-ginekologiya;
+      &::before {
+        width: 100%;
+      }
+    }
+    @include small-tablet {
+      text-overflow: ellipsis;
+      max-width: 351rem;
+      overflow: hidden;
+    }
+  }
+
+  // .tabs__tabs
+  & .section-wrap,
+  &.section-wrap {
+    background: $light-gray;
+    margin-top: 26rem;
+    @include small-tablet {
+      margin-top: 20rem;
+    }
+  }
+  &__tabs {
+    padding: 60rem 0 40rem;
+    display: grid;
+    position: relative;
+    @include small-tablet {
+      padding: 40rem 0 20rem;
+    }
+  }
+
+  // .tabs__tab
+
+  &__tab {
+    position: absolute;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition:
+      opacity 0.3s,
+      visibility 0.3s;
+    &.isActive {
+      opacity: 1;
+      visibility: visible;
+      position: relative;
+      pointer-events: fill;
+    }
+  }
+
+  // .tabs__accordion
+
+  &__accordion {
+  }
+}
+
+.faq-acc {
+  display: flex;
+  flex-direction: column;
+  gap: 16rem;
+  @include small-tablet {
+    gap: 12rem;
+  }
+  // .faq-acc__item
+
+  &__item {
+    cursor: pointer;
+
+    &.isOpen {
+      & .faq-acc__head {
+        &::before {
+          opacity: 0;
+        }
+      }
+      & .faq-acc__title {
+        color: $white;
+      }
+
+      & .faq-acc__arr {
+        transform: rotate(-180deg);
+        & svg path {
+          stroke: $white;
+        }
+      }
+    }
+  }
+
+  // .faq-acc__head
+
+  &__head {
+    border-radius: 16rem;
+    padding: 24rem 32rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20rem;
+    // background: $white;
+    background: linear-gradient(180deg, #e0004b 0%, #b0073f 100%);
+    transition: background 0.3s;
+    position: relative;
+
+    @include small-tablet {
+      border-radius: 8rem;
+      padding: 12rem;
+      gap: 12em;
+    }
+    &::before {
+      position: absolute;
+      inset: -1rem;
+      content: '';
+      background: $white;
+      opacity: 1;
+      transition: opacity 0.3s;
+      border-radius: inherit;
+    }
+  }
+
+  // .faq-acc__title
+
+  &__title {
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s;
+  }
+
+  // .faq-acc__arr
+
+  &__arr {
+    position: relative;
+    z-index: 2;
+    width: 24rem;
+    height: 24rem;
+    transition: transform 0.3s;
+    flex-shrink: 0;
+    @include small-tablet {
+      width: 16rem;
+      height: 16rem;
+    }
+    & svg path {
+      transition: stroke 0.3s;
+    }
+  }
+
+  // .faq-acc__info
+
+  &__info {
+    margin-top: 12rem;
+    display: none;
+    @include small-tablet {
+      margin-top: 8rem;
+    }
+  }
+
+  // .faq-acc__info-inner
+
+  &__info-inner {
+    border-radius: 20rem;
+    padding: 24rem;
+    background: $white;
+    display: flex;
+    flex-direction: column;
+    gap: 24rem;
+    @include small-tablet {
+      border-radius: 8rem;
+      padding: 20rem 12rem;
+      gap: 16rem;
+    }
+  }
+
+  // .faq-acc__info-text
+
+  &__info-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+  }
+
+  // .faq-acc__info-list
+
+  &__info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12rem;
+  }
+
+  // .faq-acc__info-item
+
+  &__info-item {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+  }
+
+  // .faq-acc__item-svg
+
+  &__item-svg {
+    border-radius: 50%;
+    flex-shrink: 0;
+    background: #e491ac;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include small-tablet {
+      width: 12rem;
+      height: 12rem;
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      width: 10rem;
+      height: 10rem;
+      border-radius: 50%;
+      background: $pink-ginekologiya;
+      @include small-tablet {
+        width: 5.45rem;
+        height: 5.45rem;
+      }
+    }
+  }
+
+  // .faq-acc__item-text
+
+  &__item-text {
+  }
+}
+
+.imp-art {
+  padding-bottom: 80rem;
+  @include small-tablet {
+    padding-bottom: 20rem;
+  }
+}

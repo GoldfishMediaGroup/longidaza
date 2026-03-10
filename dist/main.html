@@ -629,7 +629,7 @@
     <div class="hero__inner">
       <div class="hero__content">
         <div class="hero__info">
-          <div class="hero__billet">
+          <button class="hero__billet" data-popup="#popup__success">
             <div class="hero__billet-img">
               <img src="./assets/images/heroBillet.webp" alt="">
             </div>
@@ -638,7 +638,7 @@
               <br>
               признана Всемирной Организацией Здравоохранения
             </p>
-          </div>
+          </button>
 
           <p class="hero__title txt40">
             Лонгидаза
@@ -1386,6 +1386,33 @@
     // });
   });
 </script>
+
+      <div id="popup__success" aria-hidden="true" class="popup popup--success" data-lenis-prevent="true">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body flex dc cv">
+        <button data-close="" type="button" class="popup__close-btn">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25.4287 5.99988L7 24.4286" stroke="#000001" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M7 5.99988L25.4287 24.4286" stroke="#000001" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-content flex dc cv">
+          <div class="popup__main flex dc">
+            <p class="txt32 upper bold center">ваше обращение успешно отправлено!</p>
+
+            <p class="popup__subtitle txt20 grey center">
+              Ваш вопрос был успешно отправлен, мы постараемся ответить на него в&nbsp;течение 2‑3&nbsp;дней.
+            </p>
+          </div>
+          <button class="popup__btn btn-primary" data-close="">
+            <span>понятно</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
       <div class="fancybox-bg"></div>
     </div>
