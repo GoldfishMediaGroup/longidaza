@@ -1,10 +1,29 @@
 .btn-primary {
   border-radius: 60rem;
   position: relative;
+  transition: opacity 0.3s;
   @include small-tablet {
     width: 100%;
   }
-  &--blue {
+  &[disabled] {
+    opacity: 0.5;
+    cursor: default;
+    pointer-events: none;
+  }
+  &--white.btn-primary {
+    &.isActive,
+    &:hover {
+      & span {
+        background: transparent;
+        color: $white;
+      }
+    }
+    & span {
+      background: $white;
+      color: $pink-ginekologiya;
+    }
+  }
+  &--blue.btn-primary {
     &::before {
       background: linear-gradient(180deg, #017e90 0%, #00515d 100%) !important;
     }
@@ -13,7 +32,8 @@
         background: $green-urologiya;
       }
     }
-
+  }
+  &:hover {
     & span {
       background: $pink-ginekologiya;
     }

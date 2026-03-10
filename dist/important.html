@@ -624,81 +624,223 @@
 </a>
 
       <main>
-        <section class="order order--breadcrumbs section-wrap">
-  <div class="order__container container">
-    <div class="order__inner">
+        <section class="tabs">
+  <div class="container">
+    <div class="tabs__head">
       <nav class="breadcrumbs">
         <ul class="breadcrumbs__list txt18">
           <li><a href="#">Главная</a></li>
-          <li><p>Где купить?</p></li>
+          <li><p>Важно знать</p></li>
         </ul>
       </nav>
-
-      <p class="h1 center">Заказать онлайн</p>
-      <div class="order__list-box">
-        <ul class="order__list">
-          <li>
-            <a href="#" class="order__link">
-              <img src="./assets/images/order1.svg" alt="">
-            </a>
-          </li>
-          <li>
-            <a href="#" class="order__link">
-              <img src="./assets/images/order2.svg" alt="">
-            </a>
-          </li>
-          <li>
-            <a href="#" class="order__link">
-              <img src="./assets/images/order3.svg" alt="">
-            </a>
-          </li>
-          <li>
-            <a href="#" class="order__link">
-              <img src="./assets/images/order4.svg" alt="">
-            </a>
-          </li>
-        </ul>
-        <button class="order__btn btn-primary"><span>Получить скидку</span></button>
-      </div>
+      <p class="tabs__title h1">Важно знать</p>
     </div>
   </div>
-</section>
 
-        <section class="find section-wrap">
-  <div class="find__container container">
-    <div class="find__inner">
-      <p class="h1 center">Найти в ближайшей аптеке</p>
-
-      <div class="uteka-widget">
-        <!-- Шапка виджета -->
-        <div class="uteka-widget-header">
-          <div class="uteka-widget__container">
-            <div class="uteka-widget-header__inner">
-              <!-- Логотип -->
-              <a class="uteka-widget-header__logo" data-popup="#popup__attention">
-                <img src="https://widget.uteka.ru/static/img/widgets/logo-light.svg" alt="Заказать в Ютеке" title="поиск в аптеках">
-              </a>
-
-              <!-- Заголовок -->
-              <div class="uteka-widget-header__title"></div>
-            </div>
-          </div>
+  <div class="tabs__tabs-wrap">
+    <div class="container">
+      <div class="tabs__triggers">
+        <ul class="tabs__trigger-list">
+          <li>
+            <button data-trigger="1" class="tabs__trigger btn-primary btn-primary--white">
+              <span>ГИНЕКОЛОГИЯ</span>
+            </button>
+          </li>
+          <li>
+            <button data-trigger="2" class="tabs__trigger btn-primary btn-primary--white"><span>урология</span></button>
+          </li>
+          <li>
+            <button data-trigger="3" class="tabs__trigger btn-primary btn-primary--white">
+              <span>пульмонология</span>
+            </button>
+          </li>
+          <li>
+            <button data-trigger="4" class="tabs__trigger btn-primary btn-primary--white">
+              <span>дерматология</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="tabs__lists txt20">
+        <div class="tabs__list-item" data-list="1">
+          <ul class="tabs__list">
+            <li>
+              <button class="tabs__link" data-link="1">Эндометриоз 1</button>
+            </li>
+            <li>
+              <button class="tabs__link" data-link="2">Эндометрит 2</button>
+            </li>
+            <li>
+              <button class="tabs__link" data-link="3">Бесплодие 3</button>
+            </li>
+            <li>
+              <button class="tabs__link" data-link="4">Воспаление органов малого таза 4</button>
+            </li>
+            <li>
+              <button class="tabs__link" data-link="5">Внутриматочные синехии 5</button>
+            </li>
+            <li>
+              <button class="tabs__link" data-link="6">После оперативных вмешательств на&nbsp;органах малого таза 6</button>
+            </li>
+          </ul>
         </div>
 
-        <iframe allow="geolocation"></iframe>
+        <div class="tabs__list-item" data-list="2">
+          <ul class="tabs__list">
+            <li>
+              <button class="tabs__link" data-link="7">Эндометриоз 7</button>
+            </li>
+            <li>
+              <button class="tabs__link" data-link="8">Эндометрит 8</button>
+            </li>
+          </ul>
+        </div>
+        <div class="tabs__list-item" data-list="3">
+          <ul class="tabs__list">
+            <li>
+              <button class="tabs__link" data-link="9">Эндометриоз 9</button>
+            </li>
+            <li>
+              <button class="tabs__link" data-link="10">Эндометрит 10</button>
+            </li>
+          </ul>
+        </div>
+        <div class="tabs__list-item" data-list="4">
+          <ul class="tabs__list">
+            <li>
+              <button class="tabs__link" data-link="11">Эндометриоз 11</button>
+            </li>
+            <li>
+              <button class="tabs__link" data-link="12">Эндометрит 12</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-        <div class="uteka-widget-footer">
-          <div class="uteka-widget__container">
-            <div class="uteka-widget-footer__inner">
-              <div class="uteka-widget-footer__img">
-                <img src="./assets/images/important.svg" alt="">
-              </div>
-              <p class="uteka-widget-footer__text">
-                В разделе «Где купить» представлена информация от третьих лиц.
-                <br>
-                ООО «НПО Петровакс Фарм» не несет ответственность за достоверность, ошибки и неточности, содержащиеся в этом
-                разделе.
-              </p>
+    <div class="section-wrap">
+      <div class="container">
+        <div class="tabs__tabs">
+          <div class="tabs__tab" data-tab="1">
+            <div class="tabs__articles imp-art flex dc cv">
+              <ul class="imp-art__list">
+                <li>
+                  <a href="#" class="imp-art__link"></a>
+                </li>
+              </ul>
+              <button class="imp-art__btn btn-primary"><span>показать ещё</span></button>
+            </div>
+          </div>
+          <div class="tabs__tab" data-tab="2">
+            <div class="tabs__articles imp-art flex dc cv">
+              <ul class="imp-art__list">
+                <li>
+                  <a href="#" class="imp-art__link"></a>
+                </li>
+              </ul>
+              <button class="imp-art__btn btn-primary"><span>показать ещё</span></button>
+            </div>
+          </div>
+          <div class="tabs__tab" data-tab="3">
+            <div class="tabs__articles imp-art flex dc cv">
+              <ul class="imp-art__list">
+                <li>
+                  <a href="#" class="imp-art__link"></a>
+                </li>
+              </ul>
+              <button class="imp-art__btn btn-primary"><span>показать ещё</span></button>
+            </div>
+          </div>
+          <div class="tabs__tab" data-tab="4">
+            <div class="tabs__articles imp-art flex dc cv">
+              <ul class="imp-art__list">
+                <li>
+                  <a href="#" class="imp-art__link"></a>
+                </li>
+              </ul>
+              <button class="imp-art__btn btn-primary"><span>показать ещё</span></button>
+            </div>
+          </div>
+          <div class="tabs__tab" data-tab="5">
+            <div class="tabs__articles imp-art flex dc cv">
+              <ul class="imp-art__list">
+                <li>
+                  <a href="#" class="imp-art__link"></a>
+                </li>
+              </ul>
+              <button class="imp-art__btn btn-primary"><span>показать ещё</span></button>
+            </div>
+          </div>
+          <div class="tabs__tab" data-tab="6">
+            <div class="tabs__articles imp-art flex dc cv">
+              <ul class="imp-art__list">
+                <li>
+                  <a href="#" class="imp-art__link"></a>
+                </li>
+              </ul>
+              <button class="imp-art__btn btn-primary"><span>показать ещё</span></button>
+            </div>
+          </div>
+          <div class="tabs__tab" data-tab="7">
+            <div class="tabs__articles imp-art flex dc cv">
+              <ul class="imp-art__list">
+                <li>
+                  <a href="#" class="imp-art__link"></a>
+                </li>
+              </ul>
+              <button class="imp-art__btn btn-primary"><span>показать ещё</span></button>
+            </div>
+          </div>
+          <div class="tabs__tab" data-tab="8">
+            <div class="tabs__articles imp-art flex dc cv">
+              <ul class="imp-art__list">
+                <li>
+                  <a href="#" class="imp-art__link"></a>
+                </li>
+              </ul>
+              <button class="imp-art__btn btn-primary"><span>показать ещё</span></button>
+            </div>
+          </div>
+          <div class="tabs__tab" data-tab="9">
+            <div class="tabs__articles imp-art flex dc cv">
+              <ul class="imp-art__list">
+                <li>
+                  <a href="#" class="imp-art__link"></a>
+                </li>
+              </ul>
+              <button class="imp-art__btn btn-primary"><span>показать ещё</span></button>
+            </div>
+          </div>
+          <div class="tabs__tab" data-tab="10">
+            <div class="tabs__articles imp-art flex dc cv">
+              <ul class="imp-art__list">
+                <li>
+                  <a href="#" class="imp-art__link"></a>
+                </li>
+              </ul>
+              <button class="imp-art__btn btn-primary"><span>показать ещё</span></button>
+            </div>
+          </div>
+          <div class="tabs__tab" data-tab="11">
+            <div class="tabs__articles imp-art flex dc cv">
+              <ul class="imp-art__list">
+                <li>
+                  <a href="#" class="imp-art__link"></a>
+                </li>
+              </ul>
+              <button class="imp-art__btn btn-primary"><span>показать ещё</span></button>
+            </div>
+          </div>
+          <div class="tabs__tab" data-tab="12">
+            <div class="tabs__articles imp-art flex dc cv">
+              <ul class="imp-art__list">
+                <li>
+                  <a href="#" class="imp-art__link"></a>
+                </li>
+              </ul>
+              <button class="imp-art__btn btn-primary"><span>показать ещё</span></button>
             </div>
           </div>
         </div>
@@ -873,7 +1015,7 @@
   });
 </script>
 
-      <div id="popup__success" aria-hidden="true" class="popup popup--success" data-lenis-prevent="true">
+        <div id="popup__success" aria-hidden="true" class="popup popup--success" data-lenis-prevent="true">
   <div class="popup__wrapper">
     <div class="popup__content">
       <div class="popup__body flex dc cv">

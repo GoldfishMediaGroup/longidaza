@@ -97,7 +97,6 @@ function header() {
 
       if (window.innerWidth <= 768 && isOpening) {
         document.body.classList.add('no-scroll');
-        document.documentElement.classList.add('lock');
 
         scrollToTop();
       }
@@ -150,7 +149,6 @@ function header() {
         searchInput.focus();
         if (window.innerWidth <= 768) {
           document.body.classList.add('no-scroll');
-          document.documentElement.classList.add('lock');
 
           scrollToTop();
         }
@@ -158,7 +156,6 @@ function header() {
       if ((!isInsideSearch && window.innerWidth > 768) || closeBtn) {
         header.classList.remove('isSearch');
         document.body.classList.remove('no-scroll');
-        document.documentElement.classList.remove('lock');
       }
     });
 
